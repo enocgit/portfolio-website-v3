@@ -21,10 +21,10 @@
   </head>
   <body style="font-family: Poppins">
     <div
-      class="bg-[#21082D] bg-[url('/public/assets/hero-bg.png')] bg-cover bg-no-repeat text-[#D0F4E6] h-[120vh] py-12 relative z-10"
+      class="bg-[#21082D] bg-[url('/public/assets/hero-bg.png')] bg-cover bg-no-repeat text-[#D0F4E6] min-h-[120vh] py-12 relative z-10"
     >
       <!-- header -->
-      <header class="flex items-center pl-20 pr-32">
+      <header class="flex items-center pl-6 pr-6 mobile:pl-20 mobile:pr-32">
         <div class="flex items-center gap-5">
           <img
             src=""
@@ -33,28 +33,31 @@
           />
           <h1 class="text-3xl font-[500]">Enoch Ansah</h1>
         </div>
-        <nav class="ml-auto">
+        <nav class="ml-auto hidden lg2:block">
           <ul class="flex gap-20">
-            <li>Home</li>
-            <li>About</li>
-            <li>Portfolio</li>
-            <li>Services</li>
-            <li>Contact</li>
+            <li class="hover:text-white"><a href="">Home</a></li>
+            <li class="hover:text-white"><a href="">About</a></li>
+            <li class="hover:text-white"><a href="">Portfolio</a></li>
+            <li class="hover:text-white"><a href="">Services</a></li>
+            <li class="hover:text-white"><a href="">Contact</a></li>
           </ul>
         </nav>
       </header>
       <!-- hero -->
-      <section id="hero" class="mt-32">
+      <section
+        id="hero"
+        class="mt-32 pl-12 pr-4 mobile:pl-20 mobile:pr-4 md2:pl-32 md2:pr-20"
+      >
         <h1
-          class="text-5xl ml-32 w-9/12 leading-[1.2]"
+          class="text-5xl w-9/12 leading-[1.2]"
           style="font-family: Rubik Bubbles"
         >
           Discover Your Dream Career with My Skills and Expertise.
         </h1>
-        <h2 class="ml-32 mt-4 text-2xl" style="font-family: Irish Grover">
+        <h2 class="mt-4 text-2xl" style="font-family: Irish Grover">
           Designing for the user, building for success.
         </h2>
-        <div class="ml-32 mt-16 flex gap-10">
+        <div class="mt-16 flex flex-col mobile2:flex-row gap-10">
           <a href="">
             <button
               class="bg-[#d0f4e6] text-neutral-950 px-12 py-4 rounded-3xl text-xl"
@@ -82,7 +85,7 @@
     </section>
     <!-- Who I am -->
     <section
-      class="bg-[#21082d] bg-[length:20rem] min-h-screen relative z-10 pl-28 flex items-center justify-center text-[#d0f4e6]"
+      class="bg-[#21082d] bg-[length:20rem] min-h-screen relative z-10 pl-16 md2:pl-28 flex items-center justify-center text-[#d0f4e6]"
       style="
         background-image: url('/public/assets/wiam-bg-2.svg'),
           url('/public/assets/wiam-bg-1.svg'),
@@ -109,7 +112,7 @@
       <img
         src="/public/assets/wiam-vector.svg"
         alt=""
-        class="absolute right-80"
+        class="absolute right-60 lg2:right-80 w-52 lg2:w-64"
       />
       <div
         class="border w-28 h-28 rounded-full absolute right-16 flex items-center justify-center"
@@ -119,7 +122,7 @@
     </section>
     <!-- Showcase -->
     <section
-      class="pt-28 shadow-sm"
+      class="pt-28 pb-32 shadow bg-white border-b"
       style="
         background-image: url('/public/assets/showcase-bg.svg');
         background-position: right top 3rem;
@@ -136,13 +139,325 @@
         A collection of My Latest Works
       </h4>
       <!-- works -->
-      <div class="grid grid-cols-3 gap-5 mt-36 mb-28 px-24">
-        <div class="bg-neutral-300 h-52 relative bottom-10"></div>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-36 px-14"
+      >
+        <div class="bg-neutral-300 h-52 relative md:bottom-10"></div>
         <div class="bg-neutral-300 h-52"></div>
         <div class="bg-neutral-300 h-52"></div>
         <div class="bg-neutral-300 h-52"></div>
         <div class="bg-neutral-300 h-52"></div>
-        <div class="bg-neutral-300 h-52 relative top-10"></div>
+        <div class="bg-neutral-300 h-52 relative md:top-10"></div>
+      </div>
+    </section>
+    <!-- What I offer -->
+    <section
+      class="bg-white pt-20 pb-32 px-36 h-[210vh] relative"
+      style="
+        background-image: url('/public/assets/services-bg-2.svg'),
+          url('/public/assets/services-bg.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-position: center 10rem, left bottom -10rem;
+        background-size: 70rem, 10rem;
+      "
+    >
+      <h1
+        class="text-neutral-700 text-[1.55rem] text-center"
+        style="font-family: Rubik Bubbles"
+      >
+        What I Offer
+      </h1>
+      <div class="mt-60 ml-16 grid grid-cols-2 gap-y-48 relative">
+        <!-- service -->
+        <div class="flex items-center gap-4 relative">
+          <h2 class="text-xl text-center w-4/12 text-neutral-800">
+            Web Development
+          </h2>
+          <div class="flex flex-col">
+            <img
+              src="/public/assets/wd-illustration.svg"
+              alt=""
+              class="w-24 absolute bottom-52"
+            />
+            <div
+              class="bg-[#21082d] rounded-full w-64 h-64 shadow-2xl flex justify-center items-center px-8 py-8 text-[#d0f4e6]"
+            >
+              <p class="text-sm">
+                Provide custom-tailored web development solutions that meet your
+                unique business needs and goals.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2 relative">
+          <h2 class="text-xl text-center w-4/12 text-neutral-800">
+            E-Commerce Solutions
+          </h2>
+          <div class="flex flex-col-reverse">
+            <img
+              src="/public/assets/ec-illustration.svg"
+              alt=""
+              class="w-24 absolute top-52 right-10"
+            />
+            <div
+              class="bg-[#21082d] rounded-full w-64 h-64 shadow-2xl flex justify-center items-center px-8 py-8 text-[#d0f4e6]"
+            >
+              <p class="text-sm">
+                Build and optimize online stores that drive sales and grow your
+                business.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2 relative">
+          <h2 class="text-xl text-center w-4/12 text-neutral-800">
+            User Interfaces (UI/UX)
+          </h2>
+          <div class="flex flex-col-reverse">
+            <img
+              src="/public/assets/ui-illustration.svg"
+              alt=""
+              class="w-24 absolute bottom-52 left-40"
+            />
+            <div
+              class="bg-[#21082d] rounded-full w-64 h-64 shadow-2xl flex justify-center items-center px-8 py-8 text-[#d0f4e6] relative z-10"
+            >
+              <p class="text-sm">
+                Create intuitive, user-friendly interfaces that enhance the
+                overall user experience and increase engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <h2 class="text-xl text-center w-4/12 text-neutral-800">
+            Website Optimization
+          </h2>
+          <div class="flex flex-col-reverse">
+            <img
+              src="/public/assets/wo-illustration.svg"
+              alt=""
+              class="w-24 absolute bottom-[-3.5rem] right-48"
+            />
+            <div
+              class="bg-[#21082d] rounded-full w-64 h-64 shadow-2xl flex justify-center items-center px-8 py-8 text-[#d0f4e6]"
+            >
+              <p class="text-sm">
+                Improve website performance and speed, increase search engine
+                visibility, and attract more organic traffic.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="mt-20 mb-36">
+        <div
+          class="border-[#f4d0e1] border-[1.8rem] w-[70rem] h-[70rem] rounded-full relative z-10"
+        ></div>
+        <span
+          class="inline-block border-[#21082d] border-[1.8rem] w-[70rem] h-[70rem] rounded-full absolute right-24 top-[13.5rem]"
+        >
+        </span>
+      </div> -->
+      <!-- <img src="/public/assets/services-bg-2.svg" alt="" class="" style /> -->
+    </section>
+    <!-- Toolbox -->
+    <section class="bg-[#f9f9f9]">
+      <div
+        class="bg-[url('/public/assets/toolbox-bg.svg')] text-[#d0f4e6] pt-24 pb-32 text-center"
+        style="
+          background-image: url('/public/assets/toolbox-bg.svg');
+          background-repeat: no-repeat;
+        "
+      >
+        <h1 class="text-[1.55rem]" style="font-family: Rubik Bubbles">
+          My Toolbox
+        </h1>
+        <h4 class="mt-6">In-Depth Look at My Proficiencies</h4>
+        <hr class="border-[#d0f4e6] w-3/12 mx-auto mt-14" />
+      </div>
+      <!-- skills -->
+      <div class="grid grid-cols-4 items-center gap-y-28 pb-48">
+        <div class="flex flex-col items-center gap-5">
+          <img src="/public/assets/html5.svg" alt="html5" />
+          <h4>HTML</h4>
+          <div>
+            <span
+              class="inline-block bg-[#21082d] w-44 h-3 rounded-l-full"
+            ></span>
+            <span
+              class="inline-block bg-[#d0f4e6] w-6 h-3 rounded-r-full relative border right-2"
+            ></span>
+          </div>
+        </div>
+        <div class="flex flex-col items-center gap-5">
+          <img src="/public/assets/css3.svg" alt="css3" />
+          <h4>CSS</h4>
+          <div>
+            <span
+              class="inline-block bg-[#21082d] w-40 h-3 rounded-l-full"
+            ></span>
+            <span
+              class="inline-block bg-[#d0f4e6] w-10 h-3 rounded-r-full relative border right-2"
+            ></span>
+          </div>
+        </div>
+        <div class="flex flex-col items-center gap-4">
+          <img src="/public/assets/javascript.svg" alt="javascript" />
+          <h4>JavaScript</h4>
+          <div>
+            <span
+              class="inline-block bg-[#21082d] w-36 h-3 rounded-l-full"
+            ></span>
+            <span
+              class="inline-block bg-[#d0f4e6] w-14 h-3 rounded-r-full relative border right-2"
+            ></span>
+          </div>
+        </div>
+        <div class="flex flex-col items-center gap-5">
+          <img src="/public/assets/react.svg" alt="react" />
+          <h4>React</h4>
+          <div>
+            <span
+              class="inline-block bg-[#21082d] w-36 h-3 rounded-l-full"
+            ></span>
+            <span
+              class="inline-block bg-[#d0f4e6] w-14 h-3 rounded-r-full relative border right-2"
+            ></span>
+          </div>
+        </div>
+        <div class="flex flex-col items-center gap-5">
+          <img src="/public/assets/react.svg" alt="react" />
+          <h4>Figma</h4>
+          <div>
+            <span
+              class="inline-block bg-[#21082d] w-36 h-3 rounded-l-full"
+            ></span>
+            <span
+              class="inline-block bg-[#d0f4e6] w-14 h-3 rounded-r-full relative border right-2"
+            ></span>
+          </div>
+        </div>
+        <div class="flex flex-col items-center gap-5">
+          <img src="/public/assets/python.svg" alt="python" />
+          <h4>Python</h4>
+          <div>
+            <span
+              class="inline-block bg-[#21082d] w-40 h-3 rounded-l-full"
+            ></span>
+            <span
+              class="inline-block bg-[#d0f4e6] w-10 h-3 rounded-r-full relative border right-2"
+            ></span>
+          </div>
+        </div>
+        <div class="flex flex-col items-center gap-5">
+          <img src="/public/assets/django.svg" alt="django" />
+          <h4>Django</h4>
+          <div>
+            <span
+              class="inline-block bg-[#21082d] w-40 h-3 rounded-l-full"
+            ></span>
+            <span
+              class="inline-block bg-[#d0f4e6] w-10 h-3 rounded-r-full relative border right-2"
+            ></span>
+          </div>
+        </div>
+        <div class="flex flex-col items-center gap-5">
+          <img src="/public/assets/postgresql.svg" alt="postgresql" />
+          <h4>Postgresql</h4>
+          <div>
+            <span
+              class="inline-block bg-[#21082d] w-32 h-3 rounded-l-full"
+            ></span>
+            <span
+              class="inline-block bg-[#d0f4e6] w-20 h-3 rounded-r-full relative border right-2"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact -->
+    <section class="grid grid-cols-2">
+      <div class="bg-neutral-200 flex flex-col items-center justify-center">
+        <img src="/public/assets/contact-illustration.svg" alt="" class="" />
+        <div class="flex relative top-48 gap-3">
+          <img src="/public/assets/linkedIn.svg" alt="" />
+          <img src="/public/assets/twitter.svg" alt="" />
+          <img src="/public/assets/instagram.svg" alt="" />
+        </div>
+      </div>
+      <div
+        class="bg-white pt-20 pb-16 px-16"
+        style="
+          background-image: url('/public/assets/contact-bg.svg');
+          background-position: right bottom;
+          background-repeat: no-repeat;
+        "
+      >
+        <form action="">
+          <legend class="text-neutral-700 font-extrabold text-2xl">
+            Let&apos;s Connect
+          </legend>
+          <div class="grid grid-cols-2 mt-14 gap-x-12 gap-y-6">
+            <div>
+              <label for="" class="text-sm">Name</label>
+              <input
+                type="text"
+                placeholder="Your name"
+                class="border border-neutral-300 px-2 py-3 rounded-lg w-[90%] placeholder:text-sm text-sm focus:ring-0 focus:ring-[#21082d] focus:border-[#d0f4e6] focus:outline-0 focus:shadow-2xl focus:shadow-[#21082d] text-neutral-800"
+              />
+            </div>
+            <div>
+              <label for="" class="text-sm">Telephone</label>
+              <input
+                type="tel"
+                placeholder="Your telephone"
+                class="border border-neutral-300 px-2 py-3 rounded-lg w-[90%] placeholder:text-sm text-sm focus:ring-0 focus:ring-[#21082d] focus:border-[#d0f4e6] focus:outline-0 focus:shadow-2xl focus:shadow-[#21082d] text-neutral-800"
+              />
+            </div>
+            <div>
+              <label for="" class="text-sm">Email</label>
+              <input
+                type="mail"
+                placeholder="name@mail.com"
+                class="border border-neutral-300 px-2 py-3 rounded-lg w-[90%] placeholder:text-sm text-sm focus:ring-0 focus:ring-[#21082d] focus:border-[#d0f4e6] focus:outline-0 focus:shadow-2xl focus:shadow-[#21082d] text-neutral-800"
+              />
+            </div>
+            <div>
+              <label for="" class="text-sm">Your message</label>
+              <textarea
+                rows="5"
+                cols="14"
+                class="border border-neutral-300 px-2 py-3 rounded-lg w-[90%] text-sm focus:ring-0 focus:ring-[#21082d] focus:border-[#d0f4e6] focus:outline-0 focus:shadow-2xl focus:shadow-[#21082d] text-neutral-800"
+              ></textarea>
+            </div>
+            <input
+              type="text"
+              class="bg-[#21082d] text-center py-2 px-5 text-white flex justify-center items-center w-8/12 relative bottom-[4.6rem] cursor-pointer"
+              value="Send"
+            />
+          </div>
+        </form>
+        <div class="flex justify-end gap-8 mt-16 mr-16">
+          <!-- contact -->
+          <a href="">
+            <div
+              class="bg-white rounded-full w-16 h-16 flex justify-center items-center"
+            >
+              <img src="/public/assets/call.svg" alt="" />
+            </div>
+          </a>
+          <a href="">
+            <div
+              class="bg-white rounded-full w-16 h-16 flex justify-center items-center"
+            >
+              <img src="/public/assets/mail.svg" alt="" />
+            </div>
+          </a>
+        </div>
       </div>
     </section>
   </body>
