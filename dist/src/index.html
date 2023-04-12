@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enoch Ansah Portfolio</title>
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Kumbh+Sans&display=swap"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+    /> -->
+    <script type="module" crossorigin src="/assets/index-4a9e32c6.js"></script>
+    <link rel="stylesheet" href="/assets/index-24ffe108.css">
+  </head>
+  <body style="font-family: Jost">
+    <!-- drawer component -->
+    <div
+      id="drawer-navigation"
+      class="fixed top-0 left-0 z-40 h-screen overflow-y-auto transition-transform -translate-x-full bg-[#1c0a31] text-white w-80 dark:bg-gray-800"
+      tabindex="-1"
+      aria-labelledby="drawer-navigation-label"
+    >
+      <h5
+        id="drawer-navigation-label"
+        class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400 p-5"
+      >
+        Enoch Ansah
+      </h5>
+      <button
+        type="button"
+        data-drawer-hide="drawer-navigation"
+        aria-controls="drawer-navigation"
+        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+      >
+        <svg
+          aria-hidden="true"
+          class="w-5 h-5"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+        <span class="sr-only">Close menu</span>
+      </button>
+      <div class="py-4 overflow-y-auto">
+        <ul class="font-medium mt-5">
+          <li class="border-t border-neutral-600 py-4">
+            <a
+              href="#"
+              class="flex items-center p-2 text-white rounded-lg dark:text-white dark:hover:bg-gray-700"
+            >
+              <span class="ml-3">Home</span>
+            </a>
+          </li>
+          <li class="border-t border-neutral-600 py-4">
+            <a
+              href="#"
+              class="flex items-center p-2 text-white rounded-lg dark:text-white dark:hover:bg-gray-700"
+            >
+              <span class="ml-3">About</span>
+            </a>
+          </li>
+          <li class="border-t border-neutral-600 py-4">
+            <a
+              href="#"
+              class="flex items-center p-2 text-white rounded-lg dark:text-white dark:hover:bg-gray-700"
+            >
+              <span class="ml-3">Portfolio</span>
+            </a>
+          </li>
+          <li class="border-t border-neutral-600 py-4">
+            <a
+              href="#"
+              class="flex items-center p-2 text-white rounded-lg dark:text-white dark:hover:bg-gray-700"
+            >
+              <span class="ml-3">Services</span>
+            </a>
+          </li>
+          <li class="border-t border-b border-neutral-600 py-4">
+            <a
+              href="#"
+              class="flex items-center p-2 text-white rounded-lg dark:text-white dark:hover:bg-gray-700"
+            >
+              <span class="ml-3">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex fixed bottom-0">
+        <a href="">
+          <img
+            src="/assets/linkedIn-700552fb.svg"
+            alt=""
+            class="scale-75 py-4 px-[2.15rem]"
+          />
+        </a>
+        <a href="">
+          <img
+            src="/assets/twitter-022eb379.svg"
+            alt=""
+            class="scale-75 py-4 px-[2.15rem]"
+          />
+        </a>
+        <a href="">
+          <img
+            src="/assets/instagram-e2e98adf.svg"
+            alt=""
+            class="scale-75 py-4 px-[2.15rem]"
+          />
+        </a>
+      </div>
+    </div>
+    <div
+      class="bg-[#21082D] bg-[url('/src/assets/hero-bg.jpg')] bg-contain lg:bg-cover bg-no-repeat text-[#D0F4E6] min-h-[120vh] py-4 mobile8:py-12 relative z-10"
+    >
+      <!-- header -->
+      <header class="flex items-center pl-6 pr-6 mobile:pl-20 mobile:pr-32">
+        <div
+          class="flex items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5"
+        >
+          <img
+            src=""
+            alt="profile image"
+            class="w-14 h-14 rounded-full bg-white shrink-0 hidden mobile9:block"
+          />
+          <h1 class="text-2xl mobile6:text-3xl font-[500] text-white">
+            Enoch Ansah
+          </h1>
+        </div>
+        <nav class="ml-auto hidden lg2:block">
+          <ul class="flex gap-20 items-center text-white font-[500]">
+            <li
+              class="hover:text-white text-neutral-600 rounded-3xl bg-white px-8 py-2"
+            >
+              <a href="">Home</a>
+            </li>
+            <li class="hover:text-white"><a href="">About</a></li>
+            <li class="hover:text-white"><a href="">Portfolio</a></li>
+            <li class="hover:text-white"><a href="">Services</a></li>
+            <li class="hover:text-white"><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Hamburger -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="violet"
+          class="w-10 h-10 ml-auto block lg2:hidden shrink-0"
+          data-drawer-target="drawer-navigation"
+          data-drawer-show="drawer-navigation"
+          aria-controls="drawer-navigation"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
+          />
+        </svg>
+      </header>
+      <!-- hero -->
+      <section
+        id="hero"
+        class="mt-0 mobile8:mt-32 ml-0 mobile8:ml-1 mobile7:ml-5 mobile4:ml-12 mobile2:ml-20 md:ml-32 mr-4 mobile4:mr-4 lg2:mr-32 flex flex-col lg2:flex-row gap-10 lg2:items-center scale-50 mobile8:scale-90 mobile7:scale-100"
+      >
+        <div class="w-12/12 mobile4:w-9/12">
+          <h1
+            class="text-5xl md:text-7xl leading-[1.2] font-[700] font-['Jost']"
+          >
+            Discover Your Dream Career with My Skills and Expertise.
+          </h1>
+          <h2 class="mt-8 text-2xl font-[500] font-['Kumbh_Sans']">
+            Designing for the user, building for success.
+          </h2>
+        </div>
+        <a href="">
+          <button
+            class="bg-gradient-to-r from-[#b318bf] to-[#8D2AF0] text-white w-48 h-14 rounded-lg text-xl font-['Kumbh_Sans']"
+          >
+            Hire me
+          </button>
+        </a>
+      </section>
+    </div>
+    <!--  -->
+    <section class="bg-white h-[15vh] relative">
+      <img
+        src="/assets/bg-bg-35294979.svg"
+        alt=""
+        class="absolute top-[-10rem] right-80 z-[0]"
+      />
+    </section>
+    <!-- Who I am -->
+    <section
+      class="bg-[#21082d] bg-[length:20rem] min-h-screen relative z-10 py-20 md4:py-0 pl-5 mobile4:pl-12 mobile3:pl-16 lg:pl-36 lg2:pl-48 pr-5 mobile4:pr-12 mobile3:pr-36 md4:pr-72 flex flex-col md4:flex-row items-center justify-center text-[#d0f4e6]"
+      style="background-image:url(/assets/wiam-bg-2-af9bc6ef.svg),url(/assets/wiam-bg-1-164c9f92.svg),url(/assets/wiam-bg-3-f38bd66f.svg),url(/assets/wiam-bg-4-b8da6cc6.svg);background-position:left bottom -4rem,left 15rem top,right -1rem top,left 30rem center;background-repeat:no-repeat,no-repeat,no-repeat,no-repeat;background-size:initial;"
+    >
+      <div class="font-['Kumbh_Sans']">
+        <h1 class="text-4xl font-['Jost'] font-[700]">Who I am</h1>
+        <p class="mt-5 leading-loose md4:w-10/12">
+          Hello, I'm Enoch - a web developer and UI/UX designer with two years
+          of experience. My passion for technology, combined with my
+          problem-solving skills, drives me to create seamless and user-friendly
+          digital experiences.
+        </p>
+        <p class="mt-10">
+          Let&apos;s work together to bring your vision to life.
+        </p>
+      </div>
+      <img
+        src="/assets/wiam-vector-dde6166a.svg"
+        alt=""
+        class="w-72 mt-10 md4:mt-0"
+      />
+      <div
+        class="border w-28 h-28 rounded-full absolute right-16 bottom-2 mobile3:bottom-[initial] flex items-center justify-center"
+      >
+        <span class="inline-block bg-[#f4d0e1] rounded-full w-20 h-20"></span>
+      </div>
+    </section>
+    <!-- Showcase -->
+    <section class="pt-28 pb-32 shadow bg-[#181726]" id="showcase">
+      <h1
+        class="text-center text-white text-4xl font-[600] font-['Jost'] scale-75 mobile7:scale-100"
+      >
+        Showcase of Expertise
+      </h1>
+      <h4
+        class="text-center text-[#d0f4e6] text-xl font-[500] mobile7:mt-5 font-['Kumbh_Sans'] scale-75 mobile7:scale-100"
+      >
+        A collection of My Latest Works
+      </h4>
+      <!-- works -->
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-20 px-6 mobile3:px-14"
+      >
+        <!-- work -->
+        <a href="">
+          <img src="" alt="" class="bg-gray-100 h-72 lg:h-80 xl:h-96" />
+          <div
+            class="bg-white rounded-b-3xl h-32 flex justify-start items-center px-1 mobile7:px-10"
+          >
+            <div class="scale-75 mobile7:scale-100">
+              <!-- category -->
+              <h3 class="text-2xl text-purple-950">Branding</h3>
+              <h2 class="text-4xl font-[500] text-neutral-900 font-['Jost']">
+                Portfolio Website
+              </h2>
+            </div>
+          </div>
+        </a>
+        <!-- work -->
+        <a href="">
+          <img src="/700" alt="" class="bg-gray-100 h-72 lg:h-80 xl:h-96" />
+          <div
+            class="bg-white rounded-b-3xl h-32 flex justify-start items-center px-1 mobile7:px-10"
+          >
+            <div class="scale-75 mobile7:scale-100">
+              <!-- category -->
+              <h3 class="text-2xl text-purple-950">Branding</h3>
+              <h2 class="text-4xl font-[500] text-neutral-900 font-['Jost']">
+                Portfolio Website
+              </h2>
+            </div>
+          </div>
+        </a>
+        <!-- work -->
+        <a href="">
+          <img src="/700" alt="" class="bg-gray-100 h-72 lg:h-80 xl:h-96" />
+          <div
+            class="bg-white rounded-b-3xl h-32 flex justify-start items-center px-1 mobile7:px-10"
+          >
+            <div class="scale-75 mobile7:scale-100">
+              <!-- category -->
+              <h3 class="text-2xl text-purple-950">Branding</h3>
+              <h2 class="text-4xl font-[500] text-neutral-900 font-['Jost']">
+                Portfolio Website
+              </h2>
+            </div>
+          </div>
+        </a>
+        <!-- work -->
+        <a href="">
+          <img src="/700" alt="" class="bg-gray-100 h-72 lg:h-80 xl:h-96" />
+          <div
+            class="bg-white rounded-b-3xl h-32 flex justify-start items-center px-1 mobile7:px-10"
+          >
+            <div class="scale-75 mobile7:scale-100">
+              <!-- category -->
+              <h3 class="text-2xl text-purple-950">Branding</h3>
+              <h2 class="text-4xl font-[500] text-neutral-900 font-['Jost']">
+                Portfolio Website
+              </h2>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- What I offer -->
+    <section
+      class="bg-[#391948] text-white pt-20 pb-32 px-5 mobile4:px-10 mobile:px-20 min-h-screen relative"
+    >
+      <h1 class="text-4xl font-['Jost'] font-[600] scale-75 mobile7:scale-100">
+        What I Offer
+      </h1>
+      <div class="grid grid-cols-1 md4:grid-cols-2 lg2:grid-cols-3 mt-14 gap-8">
+        <!-- service -->
+        <div
+          class="bg-[#21082D] min-h-96 rounded-lg px-6 mobile6:px-14 py-14 flex flex-col gap-8"
+        >
+          <h2 class="text-2xl font-[700] scale-75 mobile6:scale-100">
+            Web Development
+          </h2>
+          <div class="flex">
+            <img
+              src="/assets/wd-illustration-64f4da93.svg"
+              alt=""
+              class="relative z-10"
+            />
+            <div
+              class="bg-[#292738] w-24 h-24 rounded-full relative right-14"
+            ></div>
+          </div>
+          <h4 class="text-[#67687A]">
+            Provide custom-tailored web development solutions that meet your
+            unique business needs and goals.
+          </h4>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#67687A"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+            />
+          </svg>
+        </div>
+        <div
+          class="bg-[#21082D] min-h-96 rounded-lg px-6 mobile6:px-14 py-14 flex flex-col gap-8"
+        >
+          <h2 class="text-2xl font-[700] scale-75 mobile6:scale-100">
+            E-Commerce Solutions
+          </h2>
+          <div class="flex">
+            <img
+              src="/assets/ec-illustration-60b38bc5.svg"
+              alt=""
+              class="relative z-10"
+            />
+            <div
+              class="bg-[#292738] w-24 h-24 rounded-full relative right-14"
+            ></div>
+          </div>
+          <h4 class="text-[#67687A]">
+            Build and optimize online stores that drive sales and grow your
+            business.
+          </h4>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#67687A"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+            />
+          </svg>
+        </div>
+        <div
+          class="bg-[#21082D] min-h-96 rounded-lg px-6 mobile6:px-14 py-14 flex flex-col gap-8"
+        >
+          <h2 class="text-2xl font-[700] scale-75 mobile6:scale-100">
+            User Interfaces
+          </h2>
+          <div class="flex">
+            <img
+              src="/assets/ui-illustration-c7efb2d2.svg"
+              alt=""
+              class="relative z-10"
+            />
+            <div
+              class="bg-[#292738] w-24 h-24 rounded-full relative right-14"
+            ></div>
+          </div>
+          <h4 class="text-[#67687A]">
+            Create intuitive, user-friendly interfaces that enhance the overall
+            user experience and increase engagement.
+          </h4>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#67687A"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Toolbox -->
+    <section class="bg-[#13001C]">
+      <div
+        class="bg-[url('/src/assets/toolbox-bg.svg')] pt-24 pb-10 mobile5:pb-32 text-center"
+        style="background-image:url(/assets/toolbox-bg-5b0a280f.svg);background-repeat:no-repeat;"
+      >
+        <h1
+          class="text-4xl font-[600] font-['Jost'] text-white scale-75 mobile7:scale-100"
+        >
+          My Toolbox
+        </h1>
+        <h4
+          class="mt-6 cursor-all-scroll font text-xl text-[#d0f4e6] scale-75 mobile7:scale-100"
+        >
+          In-Depth Look at My Proficiencies
+        </h4>
+        <hr class="border-[#d0f4e6] w-3/12 mx-auto mt-14" />
+      </div>
+      <!-- skills -->
+      <div
+        class="grid grid-cols-1 mobile3:grid-cols-2 sm:grid-cols-3 md4:grid-cols-4 items-center mobile5:gap-y-28 pb-20 mobile7:pb-48"
+      >
+        <!-- skill -->
+        <div
+          class="flex flex-col items-center gap-2 mobile5:gap-5 scale-50 mobile5:scale-100"
+        >
+          <img src="/assets/html5-e49fdbfe.svg" alt="html5" />
+          <h4 class="text-white">HTML</h4>
+          <div class="hidden mobile5:block">
+            <span
+              class="inline-block bg-[#d0f4e6] w-44 h-3 rounded-l-full"
+            ></span>
+            <span
+              class="inline-block bg-indigo-600 w-6 h-3 rounded-r-full relative border right-2"
+            ></span>
+          </div>
+          <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
+            95<span class="text-indigo-600">%</span>
+          </h2>
+        </div>
+        <!-- skill -->
+        <div
+          class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5"
+        >
+          <img src="/assets/css3-20b4093d.svg" alt="css3" />
+          <h4 class="text-white">CSS</h4>
+          <div class="hidden mobile5:block">
+            <span
+              class="inline-block bg-[#d0f4e6] w-40 h-3 rounded-l-full"
+            ></span>
+            <span
+              class="inline-block bg-indigo-600 w-10 h-3 rounded-r-full relative border right-2"
+            ></span>
+          </div>
+          <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
+            90<span class="text-indigo-600">%</span>
+          </h2>
+        </div>
+        <!-- skill -->
+        <div
+          class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5"
+        >
+          <img src="/assets/javascript-d6ab1c49.svg" alt="javascript" />
+          <h4 class="text-white">JavaScript</h4>
+          <div class="hidden mobile5:block">
+            <span
+              class="inline-block bg-[#d0f4e6] w-36 h-3 rounded-l-full"
+            ></span>
+            <span
+              class="inline-block bg-indigo-600 w-14 h-3 rounded-r-full relative border right-2"
+            ></span>
+          </div>
+          <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
+            85<span class="text-indigo-600">%</span>
+          </h2>
+        </div>
+        <!-- skill -->
+        <div
+          class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5"
+        >
+          <img src="/assets/react-ea80e8b3.svg" alt="react" />
+          <h4 class="text-white">React</h4>
+          <div class="hidden mobile5:block">
+            <span
+              class="inline-block bg-[#d0f4e6] w-36 h-3 rounded-l-full"
+            ></span>
+            <span
+              class="inline-block bg-indigo-600 w-14 h-3 rounded-r-full relative border right-2"
+            ></span>
+          </div>
+          <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
+            85<span class="text-indigo-600">%</span>
+          </h2>
+        </div>
+        <!-- skill -->
+        <div
+          class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5"
+        >
+          <img src="/assets/react-ea80e8b3.svg" alt="react" />
+          <h4 class="text-white">Figma</h4>
+          <div class="hidden mobile5:block">
+            <span
+              class="inline-block bg-[#d0f4e6] w-36 h-3 rounded-l-full"
+            ></span>
+            <span
+              class="inline-block bg-indigo-600 w-14 h-3 rounded-r-full relative border right-2"
+            ></span>
+          </div>
+          <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
+            87<span class="text-indigo-600">%</span>
+          </h2>
+          <!-- skill -->
+        </div>
+        <div
+          class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5"
+        >
+          <img src="/assets/python-1867525d.svg" alt="python" />
+          <h4 class="text-white">Python</h4>
+          <div class="hidden mobile5:block">
+            <span
+              class="inline-block bg-[#d0f4e6] w-40 h-3 rounded-l-full"
+            ></span>
+            <span
+              class="inline-block bg-indigo-600 w-10 h-3 rounded-r-full relative border right-2"
+            ></span>
+          </div>
+          <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
+            92<span class="text-indigo-600">%</span>
+          </h2>
+        </div>
+        <!-- skill -->
+        <div
+          class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5"
+        >
+          <img src="/assets/django-67264347.svg" alt="django" />
+          <h4 class="text-white">Django</h4>
+          <div class="hidden mobile5:block">
+            <span
+              class="inline-block bg-[#d0f4e6] w-40 h-3 rounded-l-full"
+            ></span>
+            <span
+              class="inline-block bg-indigo-600 w-10 h-3 rounded-r-full relative border right-2"
+            ></span>
+          </div>
+          <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
+            90<span class="text-indigo-600">%</span>
+          </h2>
+        </div>
+        <!-- skill -->
+        <div
+          class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5"
+        >
+          <img src="/assets/postgresql-329c149b.svg" alt="postgresql" />
+          <h4 class="text-white">Postgresql</h4>
+          <div class="hidden mobile5:block">
+            <span
+              class="inline-block bg-[#d0f4e6] w-32 h-3 rounded-l-full"
+            ></span>
+            <span
+              class="inline-block bg-indigo-600 w-20 h-3 rounded-r-full relative border right-2"
+            ></span>
+          </div>
+          <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
+            80<span class="text-indigo-600">%</span>
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="grid grid-cols-1 md3:grid-cols-2 font-['Kumbh_Sans']">
+      <div
+        class="bg-[#391948] flex flex-col items-center justify-center h-[50vh] md3:h-[inherit] relative"
+      >
+        <img src="/assets/contact-illustration-80f60f74.svg" alt="" class="" />
+        <div
+          class="flex absolute bottom-4 right-8 md3:right-[initial] md3:bottom-16 gap-3"
+        >
+          <a href="">
+            <img src="/assets/linkedIn-700552fb.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="/assets/twitter-022eb379.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="/assets/instagram-e2e98adf.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <!-- right section -->
+      <div
+        class="bg-white pt-20 pb-16 px-8 mobile2:px-16 mobile:px-32 md3:px-16"
+        style="background-image:url(/assets/contact-bg-505f66bb.svg);background-position:100% 100%;background-repeat:no-repeat;"
+      >
+        <form action="">
+          <legend class="text-neutral-700 font-[700] text-4xl font-['Jost']">
+            Let&apos;s Connect
+          </legend>
+          <div class="grid grid-cols-1 lg2:grid-cols-2 mt-14 gap-x-6 gap-y-6">
+            <div class="flex flex-col lg2:block">
+              <label for="" class="text-sm">Name</label>
+              <input
+                type="text"
+                placeholder="Your name"
+                class="border border-neutral-300 px-2 py-3 rounded-lg w-[100%] placeholder:text-sm text-sm focus:ring-2 focus:ring-[#b117bd] focus:border-[#B117BD] focus:outline-0 focus:shadow-lg text-neutral-800"
+              />
+            </div>
+            <div class="flex flex-col lg2:block">
+              <label for="" class="text-sm">Telephone</label>
+              <input
+                type="tel"
+                placeholder="Your telephone"
+                class="border border-neutral-300 px-2 py-3 rounded-lg w-[100%] placeholder:text-sm text-sm focus:ring-2 focus:ring-[#b117bd] focus:border-[#B117BD] focus:outline-0 focus:shadow-lg text-neutral-800"
+              />
+            </div>
+            <div class="flex flex-col lg2:block">
+              <label for="" class="text-sm">Email</label>
+              <input
+                type="mail"
+                placeholder="name@mail.com"
+                class="border border-neutral-300 px-2 py-3 rounded-lg w-[100%] placeholder:text-sm text-sm focus:ring-2 focus:ring-[#b117bd] focus:border-[#B117BD] focus:outline-0 focus:shadow-lg text-neutral-800"
+              />
+            </div>
+            <div class="flex flex-col lg2:block">
+              <label for="" class="text-sm">Your message</label>
+              <textarea
+                rows="5"
+                cols="14"
+                class="border border-neutral-300 px-2 py-3 rounded-lg w-[100%] text-sm focus:ring-2 focus:ring-[#b117bd] focus:border-[#B117BD] focus:outline-0 focus:shadow-lg text-neutral-800"
+              ></textarea>
+            </div>
+            <input
+              type="text"
+              class="bg-gradient-to-r from-[#B117BD] to-[#8D2AF0] rounded-[0.2rem] text-center my-20 lg2:my-0 py-2 px-5 text-white flex justify-center items-center w-8/12 relative bottom-[4.6rem] cursor-pointer"
+              value="Send"
+            />
+          </div>
+        </form>
+        <div
+          class="flex justify-end gap-8 mt-16 scale-75 mobile6:scale-100 mr-0 mobile6:mr-16"
+        >
+          <!-- contact -->
+          <a href="">
+            <div
+              class="bg-white rounded-full w-16 h-16 flex justify-center items-center"
+            >
+              <img src="/assets/call-c7a8719b.svg" alt="" />
+            </div>
+          </a>
+          <a href="">
+            <div
+              class="bg-white rounded-full w-16 h-16 flex justify-center items-center"
+            >
+              <img src="/assets/mail-b2e0b4e6.svg" alt="" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    
+  </body>
+</html>
