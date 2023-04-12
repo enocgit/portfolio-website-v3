@@ -23,18 +23,273 @@
     /> -->
   </head>
   <body style="font-family: Jost">
+    <!-- drawer component -->
     <div
-      class="bg-[#21082D] bg-[url('/src/assets/hero-bg.png')] bg-cover bg-no-repeat text-[#D0F4E6] min-h-[120vh] py-12 relative z-10"
+      id="drawer-navigation"
+      class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800"
+      tabindex="-1"
+      aria-labelledby="drawer-navigation-label"
+    >
+      <h5
+        id="drawer-navigation-label"
+        class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400"
+      >
+        Menu
+      </h5>
+      <button
+        type="button"
+        data-drawer-hide="drawer-navigation"
+        aria-controls="drawer-navigation"
+        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+      >
+        <svg
+          aria-hidden="true"
+          class="w-5 h-5"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+        <span class="sr-only">Close menu</span>
+      </button>
+      <div class="py-4 overflow-y-auto">
+        <ul class="space-y-2 font-medium">
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+                <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+              </svg>
+              <span class="ml-3">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+              aria-controls="dropdown-example"
+              data-collapse-toggle="dropdown-example"
+            >
+              <svg
+                aria-hidden="true"
+                class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                >E-commerce</span
+              >
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <ul id="dropdown-example" class="hidden py-2 space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  >Billing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  >Invoice</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+              <svg
+                aria-hidden="true"
+                class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+                ></path>
+              </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">Kanban</span>
+              <span
+                class="inline-flex items-center justify-center px-2 ml-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300"
+                >Pro</span
+              >
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+              <svg
+                aria-hidden="true"
+                class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z"
+                ></path>
+                <path
+                  d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"
+                ></path>
+              </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">Inbox</span>
+              <span
+                class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300"
+                >3</span
+              >
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+              <svg
+                aria-hidden="true"
+                class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">Users</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+              <svg
+                aria-hidden="true"
+                class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">Products</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+              <svg
+                aria-hidden="true"
+                class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">Sign In</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+              <svg
+                aria-hidden="true"
+                class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">Sign Up</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="bg-[#21082D] bg-[url('/src/assets/hero-bg.png')] bg-contain lg:bg-cover bg-no-repeat text-[#D0F4E6] min-h-[120vh] py-4 mobile8:py-12 relative z-10"
     >
       <!-- header -->
       <header class="flex items-center pl-6 pr-6 mobile:pl-20 mobile:pr-32">
-        <div class="flex items-center gap-5">
+        <div
+          class="flex items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5"
+        >
           <img
             src=""
             alt="profile image"
-            class="w-14 h-14 rounded-full bg-white"
+            class="w-14 h-14 rounded-full bg-white shrink-0 hidden mobile9:block"
           />
-          <h1 class="text-3xl font-[500] text-white">Enoch Ansah</h1>
+          <h1 class="text-2xl mobile6:text-3xl font-[500] text-white">
+            Enoch Ansah
+          </h1>
         </div>
         <nav class="ml-auto hidden lg2:block">
           <ul class="flex gap-20 items-center text-white font-[500]">
@@ -49,15 +304,30 @@
             <li class="hover:text-white"><a href="">Contact</a></li>
           </ul>
         </nav>
+        <!-- Hamburger -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="violet"
+          class="w-10 h-10 ml-auto block lg2:hidden shrink-0"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
+          />
+        </svg>
       </header>
       <!-- hero -->
       <section
         id="hero"
-        class="mt-32 ml-5 mobile4:ml-12 mobile2:ml-20 md:ml-32 mr-4 mobile4:mr-4 lg2:mr-32 flex flex-col lg2:flex-row gap-10 lg2:items-center"
+        class="mt-0 mobile8:mt-32 ml-0 mobile8:ml-1 mobile7:ml-5 mobile4:ml-12 mobile2:ml-20 md:ml-32 mr-4 mobile4:mr-4 lg2:mr-32 flex flex-col lg2:flex-row gap-10 lg2:items-center scale-50 mobile8:scale-90 mobile7:scale-100"
       >
         <div class="w-12/12 mobile4:w-9/12">
           <h1
-            class="text-5xl mobile4:text-7xl leading-[1.2] font-[700] font-['Jost']"
+            class="text-5xl md:text-7xl leading-[1.2] font-[700] font-['Jost']"
           >
             Discover Your Dream Career with My Skills and Expertise.
           </h1>
@@ -67,7 +337,7 @@
         </div>
         <a href="">
           <button
-            class="bg-gradient-to-r from-[#B117BD] to-[#8D2AF0] text-white w-48 h-14 rounded-lg text-xl font-['Kumbh_Sans']"
+            class="bg-gradient-to-r from-[#b318bf] to-[#8D2AF0] text-white w-48 h-14 rounded-lg text-xl font-['Kumbh_Sans']"
           >
             Hire me
           </button>
@@ -119,12 +389,14 @@
       </div>
     </section>
     <!-- Showcase -->
-    <section class="pt-28 pb-32 shadow bg-[#181726] border-b" id="showcase">
-      <h1 class="text-center text-white text-4xl font-[600] font-['Jost']">
+    <section class="pt-28 pb-32 shadow bg-[#181726]" id="showcase">
+      <h1
+        class="text-center text-white text-4xl font-[600] font-['Jost'] scale-75 mobile7:scale-100"
+      >
         Showcase of Expertise
       </h1>
       <h4
-        class="text-center text-[#d0f4e6] text-xl font-[500] mt-5 font-['Kumbh_Sans']"
+        class="text-center text-[#d0f4e6] text-xl font-[500] mobile7:mt-5 font-['Kumbh_Sans'] scale-75 mobile7:scale-100"
       >
         A collection of My Latest Works
       </h4>
@@ -136,9 +408,9 @@
         <a href="">
           <img src="" alt="" class="bg-gray-100 h-72 lg:h-80 xl:h-96" />
           <div
-            class="bg-white rounded-b-3xl h-32 flex justify-start items-center px-10"
+            class="bg-white rounded-b-3xl h-32 flex justify-start items-center px-1 mobile7:px-10"
           >
-            <div>
+            <div class="scale-75 mobile7:scale-100">
               <!-- category -->
               <h3 class="text-2xl text-purple-950">Branding</h3>
               <h2 class="text-4xl font-[500] text-neutral-900 font-['Jost']">
@@ -151,9 +423,9 @@
         <a href="">
           <img src="/700" alt="" class="bg-gray-100 h-72 lg:h-80 xl:h-96" />
           <div
-            class="bg-white rounded-b-3xl h-32 flex justify-start items-center px-10"
+            class="bg-white rounded-b-3xl h-32 flex justify-start items-center px-1 mobile7:px-10"
           >
-            <div>
+            <div class="scale-75 mobile7:scale-100">
               <!-- category -->
               <h3 class="text-2xl text-purple-950">Branding</h3>
               <h2 class="text-4xl font-[500] text-neutral-900 font-['Jost']">
@@ -166,9 +438,9 @@
         <a href="">
           <img src="/700" alt="" class="bg-gray-100 h-72 lg:h-80 xl:h-96" />
           <div
-            class="bg-white rounded-b-3xl h-32 flex justify-start items-center px-10"
+            class="bg-white rounded-b-3xl h-32 flex justify-start items-center px-1 mobile7:px-10"
           >
-            <div>
+            <div class="scale-75 mobile7:scale-100">
               <!-- category -->
               <h3 class="text-2xl text-purple-950">Branding</h3>
               <h2 class="text-4xl font-[500] text-neutral-900 font-['Jost']">
@@ -181,9 +453,9 @@
         <a href="">
           <img src="/700" alt="" class="bg-gray-100 h-72 lg:h-80 xl:h-96" />
           <div
-            class="bg-white rounded-b-3xl h-32 flex justify-start items-center px-10"
+            class="bg-white rounded-b-3xl h-32 flex justify-start items-center px-1 mobile7:px-10"
           >
-            <div>
+            <div class="scale-75 mobile7:scale-100">
               <!-- category -->
               <h3 class="text-2xl text-purple-950">Branding</h3>
               <h2 class="text-4xl font-[500] text-neutral-900 font-['Jost']">
@@ -196,15 +468,19 @@
     </section>
     <!-- What I offer -->
     <section
-      class="bg-[#391948] text-white pt-20 pb-32 px-20 min-h-screen relative"
+      class="bg-[#391948] text-white pt-20 pb-32 px-5 mobile4:px-10 mobile:px-20 min-h-screen relative"
     >
-      <h1 class="text-4xl font-['Jost'] font-[500]">What I Offer</h1>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-14 gap-8">
+      <h1 class="text-4xl font-['Jost'] font-[600] scale-75 mobile7:scale-100">
+        What I Offer
+      </h1>
+      <div class="grid grid-cols-1 md4:grid-cols-2 lg2:grid-cols-3 mt-14 gap-8">
         <!-- service -->
         <div
-          class="bg-[#21082D] h-96 rounded-lg px-14 py-14 flex flex-col gap-8"
+          class="bg-[#21082D] min-h-96 rounded-lg px-6 mobile6:px-14 py-14 flex flex-col gap-8"
         >
-          <h2 class="text-2xl font-[700]">Web Development</h2>
+          <h2 class="text-2xl font-[700] scale-75 mobile6:scale-100">
+            Web Development
+          </h2>
           <div class="flex">
             <img
               src="/src/assets/wd-illustration.svg"
@@ -235,9 +511,11 @@
           </svg>
         </div>
         <div
-          class="bg-[#21082D] h-96 rounded-lg px-14 py-14 flex flex-col gap-8"
+          class="bg-[#21082D] min-h-96 rounded-lg px-6 mobile6:px-14 py-14 flex flex-col gap-8"
         >
-          <h2 class="text-2xl font-[700]">E-Commerce Solutions</h2>
+          <h2 class="text-2xl font-[700] scale-75 mobile6:scale-100">
+            E-Commerce Solutions
+          </h2>
           <div class="flex">
             <img
               src="/src/assets/ec-illustration.svg"
@@ -268,9 +546,11 @@
           </svg>
         </div>
         <div
-          class="bg-[#21082D] h-96 rounded-lg px-14 py-14 flex flex-col gap-8"
+          class="bg-[#21082D] min-h-96 rounded-lg px-6 mobile6:px-14 py-14 flex flex-col gap-8"
         >
-          <h2 class="text-2xl font-[700]">User Interfaces</h2>
+          <h2 class="text-2xl font-[700] scale-75 mobile6:scale-100">
+            User Interfaces
+          </h2>
           <div class="flex">
             <img
               src="/src/assets/ui-illustration.svg"
@@ -306,26 +586,35 @@
     <!-- Toolbox -->
     <section class="bg-[#13001C]">
       <div
-        class="bg-[url('/src/assets/toolbox-bg.svg')] pt-24 pb-32 text-center"
+        class="bg-[url('/src/assets/toolbox-bg.svg')] pt-24 pb-10 mobile5:pb-32 text-center"
         style="
           background-image: url('/src/assets/toolbox-bg.svg');
           background-repeat: no-repeat;
         "
       >
-        <h1 class="text-4xl font-[600] font-['Jost'] text-white">My Toolbox</h1>
-        <h4 class="mt-6 cursor-all-scroll font text-xl text-[#d0f4e6]">
+        <h1
+          class="text-4xl font-[600] font-['Jost'] text-white scale-75 mobile7:scale-100"
+        >
+          My Toolbox
+        </h1>
+        <h4
+          class="mt-6 cursor-all-scroll font text-xl text-[#d0f4e6] scale-75 mobile7:scale-100"
+        >
           In-Depth Look at My Proficiencies
         </h4>
         <hr class="border-[#d0f4e6] w-3/12 mx-auto mt-14" />
       </div>
       <!-- skills -->
       <div
-        class="grid grid-cols-1 mobile3:grid-cols-2 sm:grid-cols-3 md4:grid-cols-4 items-center gap-y-28 pb-48"
+        class="grid grid-cols-1 mobile3:grid-cols-2 sm:grid-cols-3 md4:grid-cols-4 items-center mobile5:gap-y-28 pb-20 mobile7:pb-48"
       >
-        <div class="flex flex-col items-center gap-5">
+        <!-- skill -->
+        <div
+          class="flex flex-col items-center gap-2 mobile5:gap-5 scale-50 mobile5:scale-100"
+        >
           <img src="/src/assets/html5.svg" alt="html5" />
           <h4 class="text-white">HTML</h4>
-          <div>
+          <div class="hidden mobile5:block">
             <span
               class="inline-block bg-[#d0f4e6] w-44 h-3 rounded-l-full"
             ></span>
@@ -333,11 +622,17 @@
               class="inline-block bg-indigo-600 w-6 h-3 rounded-r-full relative border right-2"
             ></span>
           </div>
+          <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
+            95<span class="text-indigo-600">%</span>
+          </h2>
         </div>
-        <div class="flex flex-col items-center gap-5">
+        <!-- skill -->
+        <div
+          class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5"
+        >
           <img src="/src/assets/css3.svg" alt="css3" />
           <h4 class="text-white">CSS</h4>
-          <div>
+          <div class="hidden mobile5:block">
             <span
               class="inline-block bg-[#d0f4e6] w-40 h-3 rounded-l-full"
             ></span>
@@ -345,11 +640,17 @@
               class="inline-block bg-indigo-600 w-10 h-3 rounded-r-full relative border right-2"
             ></span>
           </div>
+          <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
+            90<span class="text-indigo-600">%</span>
+          </h2>
         </div>
-        <div class="flex flex-col items-center gap-4">
+        <!-- skill -->
+        <div
+          class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5"
+        >
           <img src="/src/assets/javascript.svg" alt="javascript" />
           <h4 class="text-white">JavaScript</h4>
-          <div>
+          <div class="hidden mobile5:block">
             <span
               class="inline-block bg-[#d0f4e6] w-36 h-3 rounded-l-full"
             ></span>
@@ -357,11 +658,17 @@
               class="inline-block bg-indigo-600 w-14 h-3 rounded-r-full relative border right-2"
             ></span>
           </div>
+          <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
+            85<span class="text-indigo-600">%</span>
+          </h2>
         </div>
-        <div class="flex flex-col items-center gap-5">
+        <!-- skill -->
+        <div
+          class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5"
+        >
           <img src="/src/assets/react.svg" alt="react" />
           <h4 class="text-white">React</h4>
-          <div>
+          <div class="hidden mobile5:block">
             <span
               class="inline-block bg-[#d0f4e6] w-36 h-3 rounded-l-full"
             ></span>
@@ -369,11 +676,17 @@
               class="inline-block bg-indigo-600 w-14 h-3 rounded-r-full relative border right-2"
             ></span>
           </div>
+          <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
+            85<span class="text-indigo-600">%</span>
+          </h2>
         </div>
-        <div class="flex flex-col items-center gap-5">
+        <!-- skill -->
+        <div
+          class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5"
+        >
           <img src="/src/assets/react.svg" alt="react" />
           <h4 class="text-white">Figma</h4>
-          <div>
+          <div class="hidden mobile5:block">
             <span
               class="inline-block bg-[#d0f4e6] w-36 h-3 rounded-l-full"
             ></span>
@@ -381,11 +694,17 @@
               class="inline-block bg-indigo-600 w-14 h-3 rounded-r-full relative border right-2"
             ></span>
           </div>
+          <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
+            87<span class="text-indigo-600">%</span>
+          </h2>
+          <!-- skill -->
         </div>
-        <div class="flex flex-col items-center gap-5">
+        <div
+          class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5"
+        >
           <img src="/src/assets/python.svg" alt="python" />
           <h4 class="text-white">Python</h4>
-          <div>
+          <div class="hidden mobile5:block">
             <span
               class="inline-block bg-[#d0f4e6] w-40 h-3 rounded-l-full"
             ></span>
@@ -393,11 +712,17 @@
               class="inline-block bg-indigo-600 w-10 h-3 rounded-r-full relative border right-2"
             ></span>
           </div>
+          <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
+            92<span class="text-indigo-600">%</span>
+          </h2>
         </div>
-        <div class="flex flex-col items-center gap-5">
+        <!-- skill -->
+        <div
+          class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5"
+        >
           <img src="/src/assets/django.svg" alt="django" />
           <h4 class="text-white">Django</h4>
-          <div>
+          <div class="hidden mobile5:block">
             <span
               class="inline-block bg-[#d0f4e6] w-40 h-3 rounded-l-full"
             ></span>
@@ -405,11 +730,17 @@
               class="inline-block bg-indigo-600 w-10 h-3 rounded-r-full relative border right-2"
             ></span>
           </div>
+          <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
+            90<span class="text-indigo-600">%</span>
+          </h2>
         </div>
-        <div class="flex flex-col items-center gap-5">
+        <!-- skill -->
+        <div
+          class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5"
+        >
           <img src="/src/assets/postgresql.svg" alt="postgresql" />
           <h4 class="text-white">Postgresql</h4>
-          <div>
+          <div class="hidden mobile5:block">
             <span
               class="inline-block bg-[#d0f4e6] w-32 h-3 rounded-l-full"
             ></span>
@@ -417,6 +748,9 @@
               class="inline-block bg-indigo-600 w-20 h-3 rounded-r-full relative border right-2"
             ></span>
           </div>
+          <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
+            80<span class="text-indigo-600">%</span>
+          </h2>
         </div>
       </div>
     </section>
@@ -424,10 +758,12 @@
     <!-- contact -->
     <section class="grid grid-cols-1 md3:grid-cols-2 font-['Kumbh_Sans']">
       <div
-        class="bg-[#391948] flex flex-col items-center justify-center h-[85vh] md3:h-[inherit]"
+        class="bg-[#391948] flex flex-col items-center justify-center h-[50vh] md3:h-[inherit] relative"
       >
         <img src="/src/assets/contact-illustration.svg" alt="" class="" />
-        <div class="flex relative top-48 gap-3">
+        <div
+          class="flex absolute bottom-4 right-8 md3:right-[initial] md3:bottom-16 gap-3"
+        >
           <img src="/src/assets/linkedIn.svg" alt="" />
           <img src="/src/assets/twitter.svg" alt="" />
           <img src="/src/assets/instagram.svg" alt="" />
@@ -452,7 +788,7 @@
               <input
                 type="text"
                 placeholder="Your name"
-                class="border border-neutral-300 px-2 py-3 rounded-lg w-[100%] placeholder:text-sm text-sm focus:ring-0 focus:ring-[#21082d] focus:border-[#B117BD] focus:outline-0 focus:shadow-2xl focus:shadow-[#21082d] text-neutral-800"
+                class="border border-neutral-300 px-2 py-3 rounded-lg w-[100%] placeholder:text-sm text-sm focus:ring-2 focus:ring-[#b117bd] focus:border-[#B117BD] focus:outline-0 focus:shadow-lg text-neutral-800"
               />
             </div>
             <div class="flex flex-col lg2:block">
@@ -460,7 +796,7 @@
               <input
                 type="tel"
                 placeholder="Your telephone"
-                class="border border-neutral-300 px-2 py-3 rounded-lg w-[100%] placeholder:text-sm text-sm focus:ring-0 focus:ring-[#21082d] focus:border-[#B117BD] focus:outline-0 focus:shadow-2xl focus:shadow-[#21082d] text-neutral-800"
+                class="border border-neutral-300 px-2 py-3 rounded-lg w-[100%] placeholder:text-sm text-sm focus:ring-2 focus:ring-[#b117bd] focus:border-[#B117BD] focus:outline-0 focus:shadow-lg text-neutral-800"
               />
             </div>
             <div class="flex flex-col lg2:block">
@@ -468,7 +804,7 @@
               <input
                 type="mail"
                 placeholder="name@mail.com"
-                class="border border-neutral-300 px-2 py-3 rounded-lg w-[100%] placeholder:text-sm text-sm focus:ring-0 focus:ring-[#21082d] focus:border-[#B117BD] focus:outline-0 focus:shadow-2xl focus:shadow-[#21082d] text-neutral-800"
+                class="border border-neutral-300 px-2 py-3 rounded-lg w-[100%] placeholder:text-sm text-sm focus:ring-2 focus:ring-[#b117bd] focus:border-[#B117BD] focus:outline-0 focus:shadow-lg text-neutral-800"
               />
             </div>
             <div class="flex flex-col lg2:block">
@@ -476,17 +812,19 @@
               <textarea
                 rows="5"
                 cols="14"
-                class="border border-neutral-300 px-2 py-3 rounded-lg w-[100%] text-sm focus:ring-0 focus:ring-[#21082d] focus:border-[#B117BD] focus:outline-0 focus:shadow-2xl focus:shadow-[#21082d] text-neutral-800"
+                class="border border-neutral-300 px-2 py-3 rounded-lg w-[100%] text-sm focus:ring-2 focus:ring-[#b117bd] focus:border-[#B117BD] focus:outline-0 focus:shadow-lg text-neutral-800"
               ></textarea>
             </div>
             <input
               type="text"
-              class="bg-gradient-to-r from-[#B117BD] to-[#8D2AF0] text-center my-20 lg2:my-0 py-2 px-5 text-white flex justify-center items-center w-8/12 relative bottom-[4.6rem] cursor-pointer"
+              class="bg-gradient-to-r from-[#B117BD] to-[#8D2AF0] rounded-[0.2rem] text-center my-20 lg2:my-0 py-2 px-5 text-white flex justify-center items-center w-8/12 relative bottom-[4.6rem] cursor-pointer"
               value="Send"
             />
           </div>
         </form>
-        <div class="flex justify-end gap-8 mt-16 mr-16">
+        <div
+          class="flex justify-end gap-8 mt-16 scale-75 mobile6:scale-100 mr-0 mobile6:mr-16"
+        >
           <!-- contact -->
           <a href="">
             <div
@@ -505,5 +843,7 @@
         </div>
       </div>
     </section>
+
+    <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
   </body>
 </html>

@@ -1,8 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    "./src/**/*.{html,js}", 
+    "./node_modules/flowbite/**/*.js"
+  ],
   theme: {
     screens: {
+      'mobile5': '205px',
+
+      'mobile8': '224px',
+      
+      'mobile7': '240px',
+      
+      'mobile6': '280px',
+
+      'mobile9': '360px',
+
       'mobile4': '410px',
       
       'mobile2': '434px', 
@@ -36,6 +49,8 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
 
