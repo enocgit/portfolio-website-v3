@@ -53,12 +53,11 @@
       <!-- hero -->
       <section
         id="hero"
-        class="mt-32 ml-12 mobile2:ml-20 md:ml-32 mr-4 lg2:mr-32 flex flex-col lg2:flex-row gap-10 lg2:items-center"
+        class="mt-32 ml-5 mobile4:ml-12 mobile2:ml-20 md:ml-32 mr-4 mobile4:mr-4 lg2:mr-32 flex flex-col lg2:flex-row gap-10 lg2:items-center"
       >
-        <div class="w-9/12">
+        <div class="w-12/12 mobile4:w-9/12">
           <h1
-            class="text-7xl leading-[1.2] font-[700]"
-            style="font-family: Jost"
+            class="text-5xl mobile4:text-7xl leading-[1.2] font-[700] font-['Jost']"
           >
             Discover Your Dream Career with My Skills and Expertise.
           </h1>
@@ -85,7 +84,7 @@
     </section>
     <!-- Who I am -->
     <section
-      class="bg-[#21082d] bg-[length:20rem] min-h-screen relative z-10 py-20 md4:py-0 pl-12 mobile3:pl-16 lg:pl-36 lg2:pl-48 pr-12 mobile3:pr-36 md4:pr-72 flex flex-col md4:flex-row items-center justify-center text-[#d0f4e6]"
+      class="bg-[#21082d] bg-[length:20rem] min-h-screen relative z-10 py-20 md4:py-0 pl-5 mobile4:pl-12 mobile3:pl-16 lg:pl-36 lg2:pl-48 pr-5 mobile4:pr-12 mobile3:pr-36 md4:pr-72 flex flex-col md4:flex-row items-center justify-center text-[#d0f4e6]"
       style="
         background-image: url('/src/assets/wiam-bg-2.svg'),
           url('/src/assets/wiam-bg-1.svg'), url('/src/assets/wiam-bg-3.svg'),
@@ -217,7 +216,8 @@
             ></div>
           </div>
           <h4 class="text-[#67687A]">
-            Provide custom-tailored web development solutions that meet
+            Provide custom-tailored web development solutions that meet your
+            unique business needs and goals.
           </h4>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -249,7 +249,8 @@
             ></div>
           </div>
           <h4 class="text-[#67687A]">
-            Provide custom-tailored web development solutions that meet
+            Build and optimize online stores that drive sales and grow your
+            business.
           </h4>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -281,7 +282,8 @@
             ></div>
           </div>
           <h4 class="text-[#67687A]">
-            Provide custom-tailored web development solutions that meet
+            Create intuitive, user-friendly interfaces that enhance the overall
+            user experience and increase engagement.
           </h4>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -418,9 +420,12 @@
         </div>
       </div>
     </section>
+
     <!-- contact -->
-    <section class="grid grid-cols-2 font-['Kumbh_Sans']">
-      <div class="bg-neutral-200 flex flex-col items-center justify-center">
+    <section class="grid grid-cols-1 md3:grid-cols-2 font-['Kumbh_Sans']">
+      <div
+        class="bg-[#391948] flex flex-col items-center justify-center h-[85vh] md3:h-[inherit]"
+      >
         <img src="/src/assets/contact-illustration.svg" alt="" class="" />
         <div class="flex relative top-48 gap-3">
           <img src="/src/assets/linkedIn.svg" alt="" />
@@ -428,8 +433,9 @@
           <img src="/src/assets/instagram.svg" alt="" />
         </div>
       </div>
+      <!-- right section -->
       <div
-        class="bg-white pt-20 pb-16 px-16"
+        class="bg-white pt-20 pb-16 px-8 mobile2:px-16 mobile:px-32 md3:px-16"
         style="
           background-image: url('/src/assets/contact-bg.svg');
           background-position: right bottom;
@@ -440,42 +446,42 @@
           <legend class="text-neutral-700 font-[700] text-4xl font-['Jost']">
             Let&apos;s Connect
           </legend>
-          <div class="grid grid-cols-2 mt-14 gap-x-12 gap-y-6">
-            <div>
+          <div class="grid grid-cols-1 lg2:grid-cols-2 mt-14 gap-x-6 gap-y-6">
+            <div class="flex flex-col lg2:block">
               <label for="" class="text-sm">Name</label>
               <input
                 type="text"
                 placeholder="Your name"
-                class="border border-neutral-300 px-2 py-3 rounded-lg w-[90%] placeholder:text-sm text-sm focus:ring-0 focus:ring-[#21082d] focus:border-[#d0f4e6] focus:outline-0 focus:shadow-2xl focus:shadow-[#21082d] text-neutral-800"
+                class="border border-neutral-300 px-2 py-3 rounded-lg w-[100%] placeholder:text-sm text-sm focus:ring-0 focus:ring-[#21082d] focus:border-[#B117BD] focus:outline-0 focus:shadow-2xl focus:shadow-[#21082d] text-neutral-800"
               />
             </div>
-            <div>
+            <div class="flex flex-col lg2:block">
               <label for="" class="text-sm">Telephone</label>
               <input
                 type="tel"
                 placeholder="Your telephone"
-                class="border border-neutral-300 px-2 py-3 rounded-lg w-[90%] placeholder:text-sm text-sm focus:ring-0 focus:ring-[#21082d] focus:border-[#d0f4e6] focus:outline-0 focus:shadow-2xl focus:shadow-[#21082d] text-neutral-800"
+                class="border border-neutral-300 px-2 py-3 rounded-lg w-[100%] placeholder:text-sm text-sm focus:ring-0 focus:ring-[#21082d] focus:border-[#B117BD] focus:outline-0 focus:shadow-2xl focus:shadow-[#21082d] text-neutral-800"
               />
             </div>
-            <div>
+            <div class="flex flex-col lg2:block">
               <label for="" class="text-sm">Email</label>
               <input
                 type="mail"
                 placeholder="name@mail.com"
-                class="border border-neutral-300 px-2 py-3 rounded-lg w-[90%] placeholder:text-sm text-sm focus:ring-0 focus:ring-[#21082d] focus:border-[#d0f4e6] focus:outline-0 focus:shadow-2xl focus:shadow-[#21082d] text-neutral-800"
+                class="border border-neutral-300 px-2 py-3 rounded-lg w-[100%] placeholder:text-sm text-sm focus:ring-0 focus:ring-[#21082d] focus:border-[#B117BD] focus:outline-0 focus:shadow-2xl focus:shadow-[#21082d] text-neutral-800"
               />
             </div>
-            <div>
+            <div class="flex flex-col lg2:block">
               <label for="" class="text-sm">Your message</label>
               <textarea
                 rows="5"
                 cols="14"
-                class="border border-neutral-300 px-2 py-3 rounded-lg w-[90%] text-sm focus:ring-0 focus:ring-[#21082d] focus:border-[#d0f4e6] focus:outline-0 focus:shadow-2xl focus:shadow-[#21082d] text-neutral-800"
+                class="border border-neutral-300 px-2 py-3 rounded-lg w-[100%] text-sm focus:ring-0 focus:ring-[#21082d] focus:border-[#B117BD] focus:outline-0 focus:shadow-2xl focus:shadow-[#21082d] text-neutral-800"
               ></textarea>
             </div>
             <input
               type="text"
-              class="bg-[#21082d] text-center py-2 px-5 text-white flex justify-center items-center w-8/12 relative bottom-[4.6rem] cursor-pointer"
+              class="bg-gradient-to-r from-[#B117BD] to-[#8D2AF0] text-center my-20 lg2:my-0 py-2 px-5 text-white flex justify-center items-center w-8/12 relative bottom-[4.6rem] cursor-pointer"
               value="Send"
             />
           </div>
