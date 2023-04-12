@@ -4,7 +4,8 @@
   "description": "Portfolio website built with Tailwindcss",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +13,8 @@
     "tailwindcss": "^3.3.1"
   },
   "dependencies": {
-    "flowbite": "^1.6.5"
+    "autoprefixer": "^10.4.14",
+    "flowbite": "^1.6.5",
+    "postcss": "^8.4.21"
   }
 }
