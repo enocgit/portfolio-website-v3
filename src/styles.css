@@ -1,0 +1,12 @@
+#showcase {
+  background-image: url("/public/assets/showcase-bg.svg");
+  background-position: right top 3rem;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  #showcase {
+    background-position: right bottom;
+    background-repeat: no-repeat;
+  }
+}

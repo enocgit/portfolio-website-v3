@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enoch Ansah Portfolio</title>
     <link rel="stylesheet" href="/public/output.css" type="text/css" />
+    <link rel="stylesheet" href="/src/styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;900&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Rubik+Bubbles&display=swap"
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Irish+Grover&display=swap"
+      href="https://fonts.googleapis.com/css?family=Kumbh+Sans&display=swap"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
-    />
+    /> -->
   </head>
-  <body style="font-family: Poppins">
+  <body style="font-family: Jost">
     <div
       class="bg-[#21082D] bg-[url('/public/assets/hero-bg.png')] bg-cover bg-no-repeat text-[#D0F4E6] min-h-[120vh] py-12 relative z-10"
     >
@@ -31,11 +34,15 @@
             alt="profile image"
             class="w-14 h-14 rounded-full bg-white"
           />
-          <h1 class="text-3xl font-[500]">Enoch Ansah</h1>
+          <h1 class="text-3xl font-[500] text-white">Enoch Ansah</h1>
         </div>
         <nav class="ml-auto hidden lg2:block">
-          <ul class="flex gap-20">
-            <li class="hover:text-white"><a href="">Home</a></li>
+          <ul class="flex gap-20 items-center text-white font-[500]">
+            <li
+              class="hover:text-white text-neutral-600 rounded-3xl bg-white px-8 py-2"
+            >
+              <a href="">Home</a>
+            </li>
             <li class="hover:text-white"><a href="">About</a></li>
             <li class="hover:text-white"><a href="">Portfolio</a></li>
             <li class="hover:text-white"><a href="">Services</a></li>
@@ -46,33 +53,26 @@
       <!-- hero -->
       <section
         id="hero"
-        class="mt-32 pl-12 pr-4 mobile:pl-20 mobile:pr-4 md2:pl-32 md2:pr-20"
+        class="mt-32 ml-12 mobile2:ml-20 md:ml-32 mr-4 lg2:mr-32 flex flex-col lg2:flex-row gap-10 lg2:items-center"
       >
-        <h1
-          class="text-5xl w-9/12 leading-[1.2]"
-          style="font-family: Rubik Bubbles"
-        >
-          Discover Your Dream Career with My Skills and Expertise.
-        </h1>
-        <h2 class="mt-4 text-2xl" style="font-family: Irish Grover">
-          Designing for the user, building for success.
-        </h2>
-        <div class="mt-16 flex flex-col mobile2:flex-row gap-10">
-          <a href="">
-            <button
-              class="bg-[#d0f4e6] text-neutral-950 px-12 py-4 rounded-3xl text-xl"
-            >
-              Hire me
-            </button>
-          </a>
-          <a href="">
-            <button
-              class="bg-[#F4D0E1] px-6 py-2 text-neutral-900 rounded-3xl text-xl"
-            >
-              Portfolio
-            </button>
-          </a>
+        <div class="w-9/12">
+          <h1
+            class="text-7xl leading-[1.2] font-[700]"
+            style="font-family: Jost"
+          >
+            Discover Your Dream Career with My Skills and Expertise.
+          </h1>
+          <h2 class="mt-8 text-2xl font-[500] font-['Kumbh_Sans']">
+            Designing for the user, building for success.
+          </h2>
         </div>
+        <a href="">
+          <button
+            class="bg-gradient-to-r from-[#B117BD] to-[#8D2AF0] text-white w-48 h-14 rounded-lg text-xl font-['Kumbh_Sans']"
+          >
+            Hire me
+          </button>
+        </a>
       </section>
     </div>
     <!--  -->
@@ -85,21 +85,21 @@
     </section>
     <!-- Who I am -->
     <section
-      class="bg-[#21082d] bg-[length:20rem] min-h-screen relative z-10 pl-16 md2:pl-28 flex items-center justify-center text-[#d0f4e6]"
+      class="bg-[#21082d] bg-[length:20rem] min-h-screen relative z-10 py-20 md4:py-0 pl-12 mobile3:pl-16 lg:pl-36 lg2:pl-48 pr-12 mobile3:pr-36 md4:pr-72 flex flex-col md4:flex-row items-center justify-center text-[#d0f4e6]"
       style="
         background-image: url('/public/assets/wiam-bg-2.svg'),
           url('/public/assets/wiam-bg-1.svg'),
-          url('/public/assets/wiam-bg-3.svg');
-        background-position: left bottom -4rem, left 15rem top, right -1rem top;
-        background-repeat: no-repeat, no-repeat, no-repeat;
+          url('/public/assets/wiam-bg-3.svg'),
+          url('/public/assets/wiam-bg-4.svg');
+        background-position: left bottom -4rem, left 15rem top, right -1rem top,
+          left 30rem center;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
         background-size: initial;
       "
     >
-      <div class="">
-        <h1 class="text-[2.5rem]" style="font-family: Rubik Bubbles">
-          Who I am
-        </h1>
-        <p class="mt-5 leading-normal w-5/12">
+      <div class="font-['Kumbh_Sans']">
+        <h1 class="text-5xl font-['Jost'] font-[700]">Who I am</h1>
+        <p class="mt-5 leading-loose md4:w-10/12">
           Hello, I'm Enoch - a web developer and UI/UX designer with two years
           of experience. My passion for technology, combined with my
           problem-solving skills, drives me to create seamless and user-friendly
@@ -112,42 +112,104 @@
       <img
         src="/public/assets/wiam-vector.svg"
         alt=""
-        class="absolute right-60 lg2:right-80 w-52 lg2:w-64"
+        class="w-72 mt-10 md4:mt-0"
       />
       <div
-        class="border w-28 h-28 rounded-full absolute right-16 flex items-center justify-center"
+        class="border w-28 h-28 rounded-full absolute right-16 bottom-2 mobile3:bottom-[initial] flex items-center justify-center"
       >
         <span class="inline-block bg-[#f4d0e1] rounded-full w-20 h-20"></span>
       </div>
     </section>
     <!-- Showcase -->
-    <section
-      class="pt-28 pb-32 shadow bg-white border-b"
-      style="
-        background-image: url('/public/assets/showcase-bg.svg');
-        background-position: right top 3rem;
-        background-repeat: no-repeat;
-      "
-    >
-      <h1
-        class="text-center text-neutral-700 text-[1.65rem]"
-        style="font-family: Rubik Bubbles"
-      >
+    <section class="pt-28 pb-32 shadow bg-[#181726] border-b" id="showcase">
+      <h1 class="text-center text-white text-5xl font-[600] font-['Jost']">
         Showcase of Expertise
       </h1>
-      <h4 class="text-center text-neutral-600 mt-5">
+      <h4
+        class="text-center text-[#d0f4e6] text-xl font-[500] mt-5 font-['Kumbh_Sans']"
+      >
         A collection of My Latest Works
       </h4>
       <!-- works -->
       <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-36 px-14"
+        class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-20 px-6 mobile3:px-14"
       >
-        <div class="bg-neutral-300 h-52 relative md:bottom-10"></div>
-        <div class="bg-neutral-300 h-52"></div>
-        <div class="bg-neutral-300 h-52"></div>
-        <div class="bg-neutral-300 h-52"></div>
-        <div class="bg-neutral-300 h-52"></div>
-        <div class="bg-neutral-300 h-52 relative md:top-10"></div>
+        <!-- work -->
+        <a href="">
+          <img
+            src="https://www.placebear.com/400"
+            alt=""
+            class="bg-gray-100 h-72 lg:h-80 xl:h-96"
+          />
+          <div
+            class="bg-white rounded-b-3xl h-32 flex justify-start items-center px-10"
+          >
+            <div>
+              <!-- category -->
+              <h3 class="text-2xl text-purple-950">Branding</h3>
+              <h2 class="text-5xl font-[500] text-neutral-900 font-['Jost']">
+                Portfolio Website
+              </h2>
+            </div>
+          </div>
+        </a>
+        <!-- work -->
+        <a href="">
+          <img
+            src="https://www.placebear.com/400/700"
+            alt=""
+            class="bg-gray-100 h-72 lg:h-80 xl:h-96"
+          />
+          <div
+            class="bg-white rounded-b-3xl h-32 flex justify-start items-center px-10"
+          >
+            <div>
+              <!-- category -->
+              <h3 class="text-2xl text-purple-950">Branding</h3>
+              <h2 class="text-5xl font-[500] text-neutral-900 font-['Jost']">
+                Portfolio Website
+              </h2>
+            </div>
+          </div>
+        </a>
+        <!-- work -->
+        <a href="">
+          <img
+            src="https://www.placebear.com/400/700"
+            alt=""
+            class="bg-gray-100 h-72 lg:h-80 xl:h-96"
+          />
+          <div
+            class="bg-white rounded-b-3xl h-32 flex justify-start items-center px-10"
+          >
+            <div>
+              <!-- category -->
+              <h3 class="text-2xl text-purple-950">Branding</h3>
+              <h2 class="text-5xl font-[500] text-neutral-900 font-['Jost']">
+                Portfolio Website
+              </h2>
+            </div>
+          </div>
+        </a>
+        <!-- work -->
+        <a href="">
+          <img
+            src="https://www.placebear.com/400/700"
+            alt=""
+            class="bg-gray-100 h-72 lg:h-80 xl:h-96"
+          />
+          <div
+            class="bg-white rounded-b-3xl h-32 flex justify-start items-center px-10"
+          >
+            <div>
+              <!-- category -->
+              <h3 class="text-2xl text-purple-950">Branding</h3>
+              <h2 class="text-5xl font-[500] text-neutral-900 font-['Jost']">
+                Portfolio Website
+              </h2>
+            </div>
+          </div>
+        </a>
       </div>
     </section>
     <!-- What I offer -->
@@ -158,7 +220,7 @@
           url('/public/assets/services-bg.svg');
         background-repeat: no-repeat, no-repeat;
         background-position: center 10rem, left bottom -10rem;
-        background-size: 70rem, 10rem;
+        background-size: 80rem, 10rem;
       "
     >
       <h1
@@ -167,10 +229,10 @@
       >
         What I Offer
       </h1>
-      <div class="mt-60 ml-16 grid grid-cols-2 gap-y-48 relative">
+      <div class="mt-60 mx-16 grid lg2:grid-cols-2 gap-x-20 gap-y-48 relative">
         <!-- service -->
         <div class="flex items-center gap-4 relative">
-          <h2 class="text-xl text-center w-4/12 text-neutral-800">
+          <h2 class="text-xl text-center w-5/12 text-neutral-800">
             Web Development
           </h2>
           <div class="flex flex-col">
@@ -191,7 +253,7 @@
         </div>
 
         <div class="flex items-center gap-2 relative">
-          <h2 class="text-xl text-center w-4/12 text-neutral-800">
+          <h2 class="text-xl text-center w-5/12 text-neutral-800">
             E-Commerce Solutions
           </h2>
           <div class="flex flex-col-reverse">

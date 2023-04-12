@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     screens: {
       'mobile2': '434px', 
+
+      'mobile3': '465px',
       
       'mobile': '561px',
 
@@ -13,7 +15,11 @@ module.exports = {
       'md': '768px',
       // => @media (min-width: 768px) { ... }
 
+      'md3': '860px',
+
       'md2': '905px',
+
+      'md4': '928px',
 
       'lg': '1024px',
       // => @media (min-width: 1024px) { ... }
