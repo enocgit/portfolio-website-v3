@@ -4,6 +4,59 @@
   background-repeat: no-repeat;
 }
 
+.inside-circle {
+  animation-name: grow-shrink;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+.service {
+  transition: 0.5s transform cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.service:hover {
+  transform: skew(5deg);
+  transition: 0.5s transform cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.skill-bar-amount {
+  width: 0;
+  /* animation-name: progress;
+  animation-duration: 2s; */
+}
+
+.skill-bar-width {
+  width: 12rem;
+  /* animation-name: reduce;
+  animation-duration: 2s; */
+}
+
+@keyframes grow-shrink {
+  from {
+    scale: 0.6;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes progress {
+  from {
+    width: 0rem;
+  }
+  to {
+    width: 10rem;
+  }
+}
+
+@keyframes reduce {
+  from {
+    width: 12rem;
+  }
+  to {
+    width: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   #showcase {
     background-position: right bottom;

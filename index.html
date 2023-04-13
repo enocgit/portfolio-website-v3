@@ -17,10 +17,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Kumbh+Sans&display=swap"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
-    /> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body style="font-family: Jost">
     <!-- drawer component -->
@@ -189,16 +186,23 @@
         <div class="w-12/12 mobile4:w-9/12">
           <h1
             class="text-5xl md:text-7xl leading-[1.2] font-[700] font-['Jost']"
+            data-aos="fade-left"
+            data-aos-duration="2000"
           >
             Discover Your Dream Career with My Skills and Expertise.
           </h1>
-          <h2 class="mt-8 text-2xl font-[500] font-['Kumbh_Sans']">
+          <h2
+            class="mt-8 text-2xl font-[500] font-['Kumbh_Sans']"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             Designing for the user, building for success.
           </h2>
         </div>
         <a href="">
           <button
             class="bg-gradient-to-r from-[#b318bf] to-[#8D2AF0] text-white w-48 h-14 rounded-lg text-xl font-['Kumbh_Sans']"
+            data-aos="flip-up"
           >
             Hire me
           </button>
@@ -227,14 +231,24 @@
       "
     >
       <div class="font-['Kumbh_Sans']">
-        <h1 class="text-4xl font-['Jost'] font-[700]">Who I am</h1>
-        <p class="mt-5 leading-loose md4:w-10/12">
+        <h1
+          class="text-4xl font-['Jost'] font-[700]"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+        >
+          Who I am
+        </h1>
+        <p
+          class="mt-5 leading-loose md4:w-10/12"
+          data-aos="zoom-in-up"
+          data-aos-duration="1400"
+        >
           Hello, I'm Enoch - a web developer and UI/UX designer with two years
           of experience. My passion for technology, combined with my
           problem-solving skills, drives me to create seamless and user-friendly
           digital experiences.
         </p>
-        <p class="mt-10">
+        <p class="mt-10" data-aos="zoom-in-up" data-aos-duration="1700">
           Let&apos;s work together to bring your vision to life.
         </p>
       </div>
@@ -246,7 +260,9 @@
       <div
         class="border w-28 h-28 rounded-full absolute right-16 bottom-2 mobile3:bottom-[initial] flex items-center justify-center"
       >
-        <span class="inline-block bg-[#f4d0e1] rounded-full w-20 h-20"></span>
+        <span
+          class="inline-block bg-[#f4d0e1] rounded-full w-20 h-20 inside-circle"
+        ></span>
       </div>
     </section>
     <!-- Showcase -->
@@ -337,7 +353,7 @@
       <div class="grid grid-cols-1 md4:grid-cols-2 lg2:grid-cols-3 mt-14 gap-8">
         <!-- service -->
         <div
-          class="bg-[#21082D] min-h-96 rounded-lg px-6 mobile6:px-14 py-14 flex flex-col gap-8"
+          class="bg-[#21082D] min-h-96 rounded-lg px-6 mobile6:px-14 py-14 flex flex-col gap-8 service"
         >
           <h2 class="text-2xl font-[700] scale-75 mobile6:scale-100">
             Web Development
@@ -350,6 +366,8 @@
             />
             <div
               class="bg-[#292738] w-24 h-24 rounded-full relative right-14"
+              data-aos="fade-left"
+              data-aos-duration="1000"
             ></div>
           </div>
           <h4 class="text-[#67687A]">
@@ -372,7 +390,7 @@
           </svg>
         </div>
         <div
-          class="bg-[#21082D] min-h-96 rounded-lg px-6 mobile6:px-14 py-14 flex flex-col gap-8"
+          class="bg-[#21082D] min-h-96 rounded-lg px-6 mobile6:px-14 py-14 flex flex-col gap-8 service"
         >
           <h2 class="text-2xl font-[700] scale-75 mobile6:scale-100">
             E-Commerce Solutions
@@ -385,6 +403,8 @@
             />
             <div
               class="bg-[#292738] w-24 h-24 rounded-full relative right-14"
+              data-aos="fade-left"
+              data-aos-duration="1000"
             ></div>
           </div>
           <h4 class="text-[#67687A]">
@@ -407,7 +427,7 @@
           </svg>
         </div>
         <div
-          class="bg-[#21082D] min-h-96 rounded-lg px-6 mobile6:px-14 py-14 flex flex-col gap-8"
+          class="bg-[#21082D] min-h-96 rounded-lg px-6 mobile6:px-14 py-14 flex flex-col gap-8 service"
         >
           <h2 class="text-2xl font-[700] scale-75 mobile6:scale-100">
             User Interfaces
@@ -420,6 +440,8 @@
             />
             <div
               class="bg-[#292738] w-24 h-24 rounded-full relative right-14"
+              data-aos="fade-left"
+              data-aos-duration="1000"
             ></div>
           </div>
           <h4 class="text-[#67687A]">
@@ -477,10 +499,10 @@
           <h4 class="text-white">HTML</h4>
           <div class="hidden mobile5:block">
             <span
-              class="inline-block bg-[#d0f4e6] w-44 h-3 rounded-l-full"
+              class="inline-block bg-[#d0f4e6] h-3 rounded-l-full skill-bar-amount"
             ></span>
             <span
-              class="inline-block bg-indigo-600 w-6 h-3 rounded-r-full relative border right-2"
+              class="inline-block bg-indigo-600 h-3 rounded-r-full relative border right-2 skill-bar-width"
             ></span>
           </div>
           <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
@@ -715,5 +737,10 @@
       src="/node_modules/flowbite/dist/flowbite.min.js"
       type="module"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="/src/main.js"></script>
   </body>
 </html>
