@@ -26,9 +26,15 @@
     <!-- drawer component -->
     <div
       id="drawer-navigation"
-      class="fixed top-0 left-0 z-40 h-screen overflow-y-auto transition-transform -translate-x-full bg-[#1c0a31] text-white w-80 dark:bg-gray-800"
+      class="fixed top-0 left-0 z-40 h-screen overflow-y-auto transition-transform -translate-x-full bg-[#1c0a31] text-white w-full sm:w-80 dark:bg-gray-800"
       tabindex="-1"
       aria-labelledby="drawer-navigation-label"
+      style="
+        background-image: url('/src/assets/hero-bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+      "
     >
       <h5
         id="drawer-navigation-label"
@@ -58,8 +64,9 @@
         <span class="sr-only">Close menu</span>
       </button>
       <div class="py-4 overflow-y-auto">
+        <!-- sidebar menu -->
         <ul class="font-medium mt-5">
-          <li class="border-t border-neutral-600 py-4">
+          <li class="border-t border-neutral-700 py-4">
             <a
               href="#"
               class="flex items-center p-2 text-white rounded-lg dark:text-white dark:hover:bg-gray-700"
@@ -67,7 +74,7 @@
               <span class="ml-3">Home</span>
             </a>
           </li>
-          <li class="border-t border-neutral-600 py-4">
+          <li class="border-t border-neutral-700 py-4">
             <a
               href="#"
               class="flex items-center p-2 text-white rounded-lg dark:text-white dark:hover:bg-gray-700"
@@ -75,7 +82,7 @@
               <span class="ml-3">About</span>
             </a>
           </li>
-          <li class="border-t border-neutral-600 py-4">
+          <li class="border-t border-neutral-700 py-4">
             <a
               href="#"
               class="flex items-center p-2 text-white rounded-lg dark:text-white dark:hover:bg-gray-700"
@@ -83,7 +90,7 @@
               <span class="ml-3">Portfolio</span>
             </a>
           </li>
-          <li class="border-t border-neutral-600 py-4">
+          <li class="border-t border-neutral-700 py-4">
             <a
               href="#"
               class="flex items-center p-2 text-white rounded-lg dark:text-white dark:hover:bg-gray-700"
@@ -91,7 +98,7 @@
               <span class="ml-3">Services</span>
             </a>
           </li>
-          <li class="border-t border-b border-neutral-600 py-4">
+          <li class="border-t border-b border-neutral-700 py-4">
             <a
               href="#"
               class="flex items-center p-2 text-white rounded-lg dark:text-white dark:hover:bg-gray-700"
@@ -101,7 +108,7 @@
           </li>
         </ul>
       </div>
-      <div class="flex fixed bottom-0">
+      <div class="flex justify-end fixed bottom-0">
         <a href="">
           <img
             src="/src/assets/linkedIn.svg"
