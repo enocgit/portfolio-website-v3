@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enoch Ansah Portfolio</title>
-
+    
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,16 +21,17 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
     /> -->
-    <script type="module" crossorigin src="/assets/index-4a9e32c6.js"></script>
-    <link rel="stylesheet" href="/assets/index-24ffe108.css" />
+    <script type="module" crossorigin src="/assets/index-3c3a7873.js"></script>
+    <link rel="stylesheet" href="/assets/index-e7c76a3c.css">
   </head>
   <body style="font-family: Jost">
     <!-- drawer component -->
     <div
       id="drawer-navigation"
-      class="fixed top-0 left-0 z-40 h-screen overflow-y-auto transition-transform -translate-x-full bg-[#1c0a31] text-white w-80 dark:bg-gray-800"
+      class="fixed top-0 left-0 z-40 h-screen overflow-y-auto transition-transform -translate-x-full bg-[#1c0a31] text-white w-full sm:w-80 dark:bg-gray-800"
       tabindex="-1"
       aria-labelledby="drawer-navigation-label"
+      style="background-image:url(/assets/hero-bg-e54cae39.jpg);background-size:cover;background-repeat:no-repeat;background-position:bottom;"
     >
       <h5
         id="drawer-navigation-label"
@@ -59,8 +61,9 @@
         <span class="sr-only">Close menu</span>
       </button>
       <div class="py-4 overflow-y-auto">
+        <!-- sidebar menu -->
         <ul class="font-medium mt-5">
-          <li class="border-t border-neutral-600 py-4">
+          <li class="border-t border-neutral-700 py-4">
             <a
               href="#"
               class="flex items-center p-2 text-white rounded-lg dark:text-white dark:hover:bg-gray-700"
@@ -68,7 +71,7 @@
               <span class="ml-3">Home</span>
             </a>
           </li>
-          <li class="border-t border-neutral-600 py-4">
+          <li class="border-t border-neutral-700 py-4">
             <a
               href="#"
               class="flex items-center p-2 text-white rounded-lg dark:text-white dark:hover:bg-gray-700"
@@ -76,7 +79,7 @@
               <span class="ml-3">About</span>
             </a>
           </li>
-          <li class="border-t border-neutral-600 py-4">
+          <li class="border-t border-neutral-700 py-4">
             <a
               href="#"
               class="flex items-center p-2 text-white rounded-lg dark:text-white dark:hover:bg-gray-700"
@@ -84,7 +87,7 @@
               <span class="ml-3">Portfolio</span>
             </a>
           </li>
-          <li class="border-t border-neutral-600 py-4">
+          <li class="border-t border-neutral-700 py-4">
             <a
               href="#"
               class="flex items-center p-2 text-white rounded-lg dark:text-white dark:hover:bg-gray-700"
@@ -92,7 +95,7 @@
               <span class="ml-3">Services</span>
             </a>
           </li>
-          <li class="border-t border-b border-neutral-600 py-4">
+          <li class="border-t border-b border-neutral-700 py-4">
             <a
               href="#"
               class="flex items-center p-2 text-white rounded-lg dark:text-white dark:hover:bg-gray-700"
@@ -102,7 +105,7 @@
           </li>
         </ul>
       </div>
-      <div class="flex fixed bottom-0">
+      <div class="flex justify-end fixed bottom-0">
         <a href="">
           <img
             src="/assets/linkedIn-700552fb.svg"
@@ -210,16 +213,7 @@
     <!-- Who I am -->
     <section
       class="bg-[#21082d] bg-[length:20rem] min-h-screen relative z-10 py-20 md4:py-0 pl-5 mobile4:pl-12 mobile3:pl-16 lg:pl-36 lg2:pl-48 pr-5 mobile4:pr-12 mobile3:pr-36 md4:pr-72 flex flex-col md4:flex-row items-center justify-center text-[#d0f4e6]"
-      style="
-        background-image: url(/assets/wiam-bg-2-af9bc6ef.svg),
-          url(/assets/wiam-bg-1-164c9f92.svg),
-          url(/assets/wiam-bg-3-f38bd66f.svg),
-          url(/assets/wiam-bg-4-b8da6cc6.svg);
-        background-position: left bottom -4rem, left 15rem top, right -1rem top,
-          left 30rem center;
-        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-        background-size: initial;
-      "
+      style="background-image:url(/assets/wiam-bg-2-af9bc6ef.svg),url(/assets/wiam-bg-1-164c9f92.svg),url(/assets/wiam-bg-3-f38bd66f.svg),url(/assets/wiam-bg-4-b8da6cc6.svg);background-position:left bottom -4rem,left 15rem top,right -1rem top,left 30rem center;background-repeat:no-repeat,no-repeat,no-repeat,no-repeat;background-size:initial;"
     >
       <div class="font-['Kumbh_Sans']">
         <h1 class="text-4xl font-['Jost'] font-[700]">Who I am</h1>
@@ -443,10 +437,7 @@
     <section class="bg-[#13001C]">
       <div
         class="bg-[url('/src/assets/toolbox-bg.svg')] pt-24 pb-10 mobile5:pb-32 text-center"
-        style="
-          background-image: url(/assets/toolbox-bg-5b0a280f.svg);
-          background-repeat: no-repeat;
-        "
+        style="background-image:url(/assets/toolbox-bg-5b0a280f.svg);background-repeat:no-repeat;"
       >
         <h1
           class="text-4xl font-[600] font-['Jost'] text-white scale-75 mobile7:scale-100"
@@ -634,11 +625,7 @@
       <!-- right section -->
       <div
         class="bg-white pt-20 pb-16 px-8 mobile2:px-16 mobile:px-32 md3:px-16"
-        style="
-          background-image: url(/assets/contact-bg-505f66bb.svg);
-          background-position: 100% 100%;
-          background-repeat: no-repeat;
-        "
+        style="background-image:url(/assets/contact-bg-505f66bb.svg);background-position:100% 100%;background-repeat:no-repeat;"
       >
         <form action="">
           <legend class="text-neutral-700 font-[700] text-4xl font-['Jost']">
@@ -705,5 +692,7 @@
         </div>
       </div>
     </section>
+
+    
   </body>
 </html>
