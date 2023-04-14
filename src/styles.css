@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 #showcase {
   background-image: url("/public/assets/showcase-bg.svg");
   background-position: right top 3rem;
@@ -7,7 +11,7 @@
 .inside-circle {
   animation-name: grow-shrink;
   animation-iteration-count: infinite;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
 }
 .service {
   transition: 0.5s transform cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -18,16 +22,13 @@
   transition: 0.5s transform cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.skill-bar-amount {
-  width: 0;
-  /* animation-name: progress;
-  animation-duration: 2s; */
+#toast-success {
+  visibility: hidden;
 }
 
-.skill-bar-width {
-  width: 12rem;
-  /* animation-name: reduce;
-  animation-duration: 2s; */
+.perform-slide {
+  animation-name: slide-left;
+  animation-duration: 1.1s;
 }
 
 @keyframes grow-shrink {
@@ -54,6 +55,15 @@
   }
   to {
     width: 2rem;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    right: -20rem;
+  }
+  to {
+    right: 0;
   }
 }
 
