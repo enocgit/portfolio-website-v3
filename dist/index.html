@@ -18,15 +18,15 @@
       href="https://fonts.googleapis.com/css?family=Kumbh+Sans&display=swap"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script type="module" crossorigin src="/assets/index-dd1ca4a6.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/main-9388764d.js">
-    <link rel="stylesheet" href="/assets/index-e2f28b62.css">
+    <script type="module" crossorigin src="/assets/index-bf465619.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/main-8cb490d2.js">
+    <link rel="stylesheet" href="/assets/index-eb3b0e47.css">
   </head>
-  <body style="font-family: Jost">
+  <body style="font-family: Jost, sans-serif">
     <!-- drawer component -->
     <div
       id="drawer-navigation"
-      class="fixed top-0 left-0 z-40 h-screen overflow-y-auto transition-transform -translate-x-full bg-[#1c0a31] text-white w-full sm:w-80 dark:bg-gray-800"
+      class="fixed top-0 left-0 z-40 h-screen overflow-y-auto transition-transform -translate-x-full bg-[#1c0a31] text-white w-full sm:w-80 dark:bg-gray-800 shadow-sm shadow-[#b318bf]"
       tabindex="-1"
       aria-labelledby="drawer-navigation-label"
       style="background-image:url(/assets/hero-bg-e54cae39.jpg);background-size:cover;background-repeat:no-repeat;background-position:bottom;"
@@ -142,61 +142,60 @@
         </a>
       </div>
     </div>
-
-    <div
-      class="bg-[#21082D] bg-[url('/src/assets/hero-bg.jpg')] bg-contain lg:bg-cover bg-no-repeat text-[#D0F4E6] min-h-[120vh] py-4 mobile8:py-0 relative z-10"
+    <!-- header -->
+    <header
+      class="bg-no-repeat bg-top bg-cover flex items-center py-12 pl-6 pr-6 mobile:pl-20 mobile:pr-32 z-30 fixed top-0 w-screen"
+      id="main-header"
     >
-      <!-- header -->
-      <header
-        class="flex items-center py-12 pl-6 pr-6 mobile:pl-20 mobile:pr-32 sticky top-0 z-50 bg-opacity-10"
-        id="main-header"
+      <div
+        class="flex items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5"
       >
-        <div
-          class="flex items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5"
-        >
-          <img
-            src=""
-            alt="profile image"
-            class="w-14 h-14 rounded-full bg-white shrink-0 hidden mobile9:block"
-          />
-          <h1 class="text-2xl mobile6:text-3xl font-[500] text-white">
-            Enoch Ansah
-          </h1>
-        </div>
-        <nav class="ml-auto hidden lg2:block">
-          <ul class="flex gap-20 items-center text-white font-[500]">
-            <li class="text-neutral-600 rounded-3xl bg-white px-8 py-2">
-              <a href="#hero">Home</a>
-            </li>
-            <li class=""><a href="#about">About</a></li>
-            <li class=""><a href="#showcase">Portfolio</a></li>
-            <li class=""><a href="#services">Services</a></li>
-            <li class=""><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <!-- Hamburger -->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="violet"
-          class="w-10 h-10 ml-auto block lg2:hidden shrink-0"
-          data-drawer-target="drawer-navigation"
-          data-drawer-show="drawer-navigation"
-          aria-controls="drawer-navigation"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
-          />
-        </svg>
-      </header>
+        <img
+          src=""
+          alt="profile image"
+          class="w-14 h-14 rounded-full bg-white shrink-0 hidden mobile9:block"
+        />
+        <h1 class="text-2xl mobile6:text-3xl font-[500] text-white">
+          Enoch Ansah
+        </h1>
+      </div>
+      <nav class="ml-auto hidden lg2:block">
+        <ul class="flex gap-20 items-center text-white font-[500]">
+          <li class="text-neutral-600 rounded-3xl bg-white px-8 py-2">
+            <a href="#hero">Home</a>
+          </li>
+          <li class=""><a href="#about">About</a></li>
+          <li class=""><a href="#showcase">Portfolio</a></li>
+          <li class=""><a href="#services">Services</a></li>
+          <li class=""><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Hamburger -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="violet"
+        class="w-10 h-10 ml-auto block lg2:hidden shrink-0"
+        data-drawer-target="drawer-navigation"
+        data-drawer-show="drawer-navigation"
+        aria-controls="drawer-navigation"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
+        />
+      </svg>
+    </header>
+    <div
+      class="bg-[#21082D] bg-[url('/src/assets/hero-bg.jpg')] bg-bottom bg-cover bg-no-repeat text-[#D0F4E6] min-h-[120vh] py-4 mobile8:py-0 relative z-10"
+    >
       <!-- hero -->
       <section
         id="hero"
-        class="mt-0 mobile8:mt-20 ml-0 mobile8:ml-1 mobile7:ml-5 mobile4:ml-12 mobile2:ml-20 md:ml-32 mr-4 mobile4:mr-4 lg2:mr-32 flex flex-col lg2:flex-row gap-10 lg2:items-center scale-50 mobile8:scale-90 mobile7:scale-100"
+        class="mt-0 mobile8:mt-0 pt-[14.5rem] ml-0 mobile8:ml-1 mobile7:ml-5 mobile4:ml-12 mobile2:ml-20 md:ml-32 mr-4 mobile4:mr-4 lg2:mr-32 flex flex-col lg2:flex-row gap-10 lg2:items-center scale-50 mobile8:scale-90 mobile7:scale-100"
       >
         <div class="w-12/12 mobile4:w-9/12">
           <h1
@@ -290,61 +289,61 @@
         class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-20 px-6 mobile3:px-14"
       >
         <!-- work -->
-        <a href="">
+        <a href="" data-aos="zoom-in-down" data-aos-duration="1000">
           <img src="" alt="" class="bg-gray-100 h-72 lg:h-80 xl:h-96" />
           <div
             class="bg-white rounded-b-3xl h-32 flex justify-start items-center px-1 mobile7:px-10"
           >
             <div class="scale-75 mobile7:scale-100">
               <!-- category -->
-              <h3 class="text-2xl text-purple-950">Branding</h3>
+              <h3 class="text-2xl text-purple-950">Web Development</h3>
               <h2 class="text-4xl font-[500] text-neutral-900 font-['Jost']">
-                Portfolio Website
+                Business Website
               </h2>
             </div>
           </div>
         </a>
         <!-- work -->
-        <a href="">
+        <a href="" data-aos="zoom-in-up" data-aos-duration="1000">
           <img src="/700" alt="" class="bg-gray-100 h-72 lg:h-80 xl:h-96" />
           <div
             class="bg-white rounded-b-3xl h-32 flex justify-start items-center px-1 mobile7:px-10"
           >
             <div class="scale-75 mobile7:scale-100">
               <!-- category -->
-              <h3 class="text-2xl text-purple-950">Branding</h3>
+              <h3 class="text-2xl text-purple-950">User Interface</h3>
               <h2 class="text-4xl font-[500] text-neutral-900 font-['Jost']">
-                Portfolio Website
+                Landing Page
               </h2>
             </div>
           </div>
         </a>
         <!-- work -->
-        <a href="">
+        <a href="" data-aos="fade-up-right" data-aos-duration="1000">
           <img src="/700" alt="" class="bg-gray-100 h-72 lg:h-80 xl:h-96" />
           <div
             class="bg-white rounded-b-3xl h-32 flex justify-start items-center px-1 mobile7:px-10"
           >
             <div class="scale-75 mobile7:scale-100">
               <!-- category -->
-              <h3 class="text-2xl text-purple-950">Branding</h3>
+              <h3 class="text-2xl text-purple-950">Fullstack</h3>
               <h2 class="text-4xl font-[500] text-neutral-900 font-['Jost']">
-                Portfolio Website
+                Church Website
               </h2>
             </div>
           </div>
         </a>
         <!-- work -->
-        <a href="">
+        <a href="" data-aos="zoom-in-left" data-aos-duration="1000">
           <img src="/700" alt="" class="bg-gray-100 h-72 lg:h-80 xl:h-96" />
           <div
             class="bg-white rounded-b-3xl h-32 flex justify-start items-center px-1 mobile7:px-10"
           >
             <div class="scale-75 mobile7:scale-100">
               <!-- category -->
-              <h3 class="text-2xl text-purple-950">Branding</h3>
+              <h3 class="text-2xl text-purple-950">Frontend</h3>
               <h2 class="text-4xl font-[500] text-neutral-900 font-['Jost']">
-                Portfolio Website
+                Web Application
               </h2>
             </div>
           </div>
@@ -496,19 +495,20 @@
       <!-- skills -->
       <div
         class="grid grid-cols-1 mobile3:grid-cols-2 sm:grid-cols-3 md4:grid-cols-4 items-center mobile5:gap-y-28 pb-20 mobile7:pb-48"
+        id="skills"
       >
         <!-- skill -->
         <div
           class="flex flex-col items-center gap-2 mobile5:gap-5 scale-50 mobile5:scale-100 skill"
         >
           <img src="/assets/html5-e49fdbfe.svg" alt="html5" />
-          <h4 class="text-white">HTML</h4>
-          <div class="hidden mobile5:block">
+          <h4 class="text-white skill-name">HTML</h4>
+          <div
+            class="hidden mobile5:block w-[12rem] rounded-full h-3 border bg-indigo-600 skill-bar"
+          >
             <span
-              class="inline-block bg-[#d0f4e6] h-3 rounded-l-full skill-bar-amount"
-            ></span>
-            <span
-              class="inline-block bg-indigo-600 skill-bar-width h-3 rounded-r-full relative border right-2"
+              class="inline-block relative bottom-[.39rem] bg-[#d0f4e6] h-3 rounded-l-full progress-bar"
+              data-value="95"
             ></span>
           </div>
           <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
@@ -517,16 +517,16 @@
         </div>
         <!-- skill -->
         <div
-          class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5"
+          class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5 skill"
         >
           <img src="/assets/css3-20b4093d.svg" alt="css3" />
-          <h4 class="text-white">CSS</h4>
-          <div class="hidden mobile5:block">
+          <h4 class="text-white skill-name">CSS</h4>
+          <div
+            class="hidden mobile5:block w-[12rem] rounded-full h-3 border bg-indigo-600 skill-bar"
+          >
             <span
-              class="inline-block bg-[#d0f4e6] w-40 h-3 rounded-l-full skill-bar-amount"
-            ></span>
-            <span
-              class="inline-block bg-indigo-600 skill-bar-width w-10 h-3 rounded-r-full relative border right-2"
+              class="inline-block relative bottom-[.39rem] bg-[#d0f4e6] h-3 rounded-l-full progress-bar"
+              data-value="90"
             ></span>
           </div>
           <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
@@ -538,17 +538,17 @@
           class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5 skill"
         >
           <img src="/assets/javascript-d6ab1c49.svg" alt="javascript" />
-          <h4 class="text-white">JavaScript</h4>
-          <div class="hidden mobile5:block">
+          <h4 class="text-white skill-name">JavaScript</h4>
+          <div
+            class="hidden mobile5:block w-[12rem] rounded-full h-3 border bg-indigo-600 skill-bar"
+          >
             <span
-              class="inline-block bg-[#d0f4e6] w-36 h-3 rounded-l-full skill-bar-amount"
-            ></span>
-            <span
-              class="inline-block bg-indigo-600 skill-bar-width w-14 h-3 rounded-r-full relative border right-2"
+              class="inline-block relative bottom-[.39rem] bg-[#d0f4e6] h-3 rounded-l-full progress-bar"
+              data-value="80"
             ></span>
           </div>
           <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
-            85<span class="text-indigo-600">%</span>
+            80<span class="text-indigo-600">%</span>
           </h2>
         </div>
         <!-- skill -->
@@ -556,13 +556,49 @@
           class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5 skill"
         >
           <img src="/assets/react-ea80e8b3.svg" alt="react" />
-          <h4 class="text-white">React</h4>
-          <div class="hidden mobile5:block">
+          <h4 class="text-white skill-name">React</h4>
+          <div
+            class="hidden mobile5:block w-[12rem] rounded-full h-3 border bg-indigo-600 skill-bar"
+          >
             <span
-              class="inline-block bg-[#d0f4e6] w-36 h-3 rounded-l-full skill-bar-amount"
+              class="inline-block relative bottom-[.39rem] bg-[#d0f4e6] h-3 rounded-l-full progress-bar"
+              data-value="80"
             ></span>
+          </div>
+          <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
+            80<span class="text-indigo-600">%</span>
+          </h2>
+        </div>
+        <!-- skill -->
+        <div
+          class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5 skill"
+        >
+          <img src="/assets/figma-b3bbed40.svg" alt="react" />
+          <h4 class="text-white skill-name">Figma</h4>
+          <div
+            class="hidden mobile5:block w-[12rem] rounded-full h-3 border bg-indigo-600 skill-bar"
+          >
             <span
-              class="inline-block bg-indigo-600 skill-bar-width w-14 h-3 rounded-r-full relative border right-2"
+              class="inline-block relative bottom-[.39rem] bg-[#d0f4e6] h-3 rounded-l-full progress-bar"
+              data-value="78"
+            ></span>
+          </div>
+          <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
+            78<span class="text-indigo-600">%</span>
+          </h2>
+          <!-- skill -->
+        </div>
+        <div
+          class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5 skill"
+        >
+          <img src="/assets/python-1867525d.svg" alt="python" />
+          <h4 class="text-white skill-name">Python</h4>
+          <div
+            class="hidden mobile5:block w-[12rem] rounded-full h-3 border bg-indigo-600 skill-bar"
+          >
+            <span
+              class="inline-block relative bottom-[.39rem] bg-[#d0f4e6] h-3 rounded-l-full progress-bar"
+              data-value="85"
             ></span>
           </div>
           <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
@@ -573,54 +609,18 @@
         <div
           class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5 skill"
         >
-          <img src="/assets/figma-b3bbed40.svg" alt="react" />
-          <h4 class="text-white">Figma</h4>
-          <div class="hidden mobile5:block">
-            <span
-              class="inline-block bg-[#d0f4e6] w-36 h-3 rounded-l-full skill-bar-amount"
-            ></span>
-            <span
-              class="inline-block bg-indigo-600 skill-bar-width w-14 h-3 rounded-r-full relative border right-2"
-            ></span>
-          </div>
-          <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
-            87<span class="text-indigo-600">%</span>
-          </h2>
-          <!-- skill -->
-        </div>
-        <div
-          class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5 skill"
-        >
-          <img src="/assets/python-1867525d.svg" alt="python" />
-          <h4 class="text-white">Python</h4>
-          <div class="hidden mobile5:block">
-            <span
-              class="inline-block bg-[#d0f4e6] w-40 h-3 rounded-l-full skill-bar-amount"
-            ></span>
-            <span
-              class="inline-block bg-indigo-600 skill-bar-width w-10 h-3 rounded-r-full relative border right-2"
-            ></span>
-          </div>
-          <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
-            92<span class="text-indigo-600">%</span>
-          </h2>
-        </div>
-        <!-- skill -->
-        <div
-          class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5 skill"
-        >
           <img src="/assets/django-67264347.svg" alt="django" />
-          <h4 class="text-white">Django</h4>
-          <div class="hidden mobile5:block">
+          <h4 class="text-white skill-name">Django</h4>
+          <div
+            class="hidden mobile5:block w-[12rem] rounded-full h-3 border bg-indigo-600 skill-bar"
+          >
             <span
-              class="inline-block bg-[#d0f4e6] w-40 h-3 rounded-l-full skill-bar-amount"
-            ></span>
-            <span
-              class="inline-block bg-indigo-600 skill-bar-width w-10 h-3 rounded-r-full relative border right-2"
+              class="inline-block relative bottom-[.39rem] bg-[#d0f4e6] h-3 rounded-l-full progress-bar"
+              data-value="85"
             ></span>
           </div>
           <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
-            90<span class="text-indigo-600">%</span>
+            85<span class="text-indigo-600">%</span>
           </h2>
         </div>
         <!-- skill -->
@@ -628,17 +628,17 @@
           class="flex flex-col items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5 skill"
         >
           <img src="/assets/postgresql-329c149b.svg" alt="postgresql" />
-          <h4 class="text-white">Postgresql</h4>
-          <div class="hidden mobile5:block">
+          <h4 class="text-white skill-name">Postgresql</h4>
+          <div
+            class="hidden mobile5:block w-[12rem] rounded-full h-3 border bg-indigo-600 skill-bar"
+          >
             <span
-              class="inline-block bg-[#d0f4e6] w-32 h-3 rounded-l-full skill-bar-amount"
-            ></span>
-            <span
-              class="inline-block bg-indigo-600 skill-bar-width w-20 h-3 rounded-r-full relative border right-2"
+              class="inline-block relative bottom-[.39rem] bg-[#d0f4e6] h-3 rounded-l-full progress-bar"
+              data-value="75"
             ></span>
           </div>
           <h2 class="text-[#d0f4e6] text-6xl block mobile5:hidden">
-            80<span class="text-indigo-600">%</span>
+            75<span class="text-indigo-600">%</span>
           </h2>
         </div>
       </div>
