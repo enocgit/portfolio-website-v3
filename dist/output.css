@@ -2982,6 +2982,12 @@ input:checked + .toggle-bg {
     bottom: initial;
   }
 
+  .mobile3\:scale-100 {
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .mobile3\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2989,6 +2995,11 @@ input:checked + .toggle-bg {
   .mobile3\:px-14 {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
+  }
+
+  .mobile3\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .mobile3\:pl-16 {
@@ -3001,6 +3012,12 @@ input:checked + .toggle-bg {
 }
 
 @media (min-width: 561px) {
+  .mobile\:scale-100 {
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .mobile\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
