@@ -1348,6 +1348,10 @@ input:checked + .toggle-bg {
   margin-top: 2rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -1450,6 +1454,34 @@ input:checked + .toggle-bg {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-\[80vh\] {
+  min-height: 80vh;
+}
+
+.min-h-\[90vh\] {
+  min-height: 90vh;
+}
+
+.min-h-\[100vh\] {
+  min-height: 100vh;
+}
+
+.min-h-\[95vh\] {
+  min-height: 95vh;
+}
+
+.min-h-\[95\.5vh\] {
+  min-height: 95.5vh;
+}
+
+.min-h-\[96vh\] {
+  min-height: 96vh;
+}
+
+.min-h-\[98vh\] {
+  min-height: 98vh;
 }
 
 .w-1\/2 {
@@ -1574,6 +1606,10 @@ input:checked + .toggle-bg {
 
 .w-\[75\%\] {
   width: 75%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .max-w-\[12rem\] {
@@ -1946,12 +1982,36 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / 0.5);
 }
 
+.bg-purple-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(85 33 181 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#2a1236\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(42 18 54 / var(--tw-bg-opacity));
+}
+
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 159 110 / var(--tw-bg-opacity));
+}
+
+.bg-green-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 122 85 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-10 {
   --tw-bg-opacity: 0.1;
 }
 
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
+}
+
+.bg-opacity-0 {
+  --tw-bg-opacity: 0;
 }
 
 .bg-\[url\(\'\/src\/assets\/hero-bg\.jpg\'\)\] {
@@ -1993,6 +2053,22 @@ input:checked + .toggle-bg {
 
 .bg-contain {
   background-size: contain;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-bottom {
+  background-position: bottom;
+}
+
+.bg-top {
+  background-position: top;
 }
 
 .bg-no-repeat {
@@ -2088,6 +2164,11 @@ input:checked + .toggle-bg {
   padding-bottom: 1rem;
 }
 
+.py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -2134,6 +2215,30 @@ input:checked + .toggle-bg {
 
 .pt-28 {
   padding-top: 7rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
+}
+
+.pt-0 {
+  padding-top: 0px;
+}
+
+.pt-48 {
+  padding-top: 12rem;
+}
+
+.pt-56 {
+  padding-top: 14rem;
+}
+
+.pt-60 {
+  padding-top: 15rem;
+}
+
+.pt-\[14\.5rem\] {
+  padding-top: 14.5rem;
 }
 
 .text-center {
@@ -2313,6 +2418,10 @@ input:checked + .toggle-bg {
 
 .opacity-100 {
   opacity: 1;
+}
+
+.opacity-5 {
+  opacity: 0.05;
 }
 
 .shadow {
@@ -2613,6 +2722,10 @@ input:checked + .toggle-bg {
 
   .mobile8\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .mobile8\:mt-0 {
+    margin-top: 0px;
   }
 
   .mobile8\:scale-90 {

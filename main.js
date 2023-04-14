@@ -9,12 +9,15 @@ const header = document.getElementById('main-header')
 
 // Scroll Event for Header
 window.addEventListener('scroll', () => {
-    // console.log(scrollY)
+    console.log(scrollY)
     if (scrollY >= 126) {
-        header.style.backgroundColor = "#2a1236"
+        header.style.background = "#2a1236"
     }
     else {
-        header.style.backgroundColor = 'transparent'
+        // header.style.background = "url('/src/assets/hero-bg.jpg')"
+        header.style.background = "transparent"
+        header.style.backgroundSize = "cover"
+        header.style.backgroundPosition = "top"
     }
 });
 
