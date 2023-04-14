@@ -9,7 +9,6 @@ const header = document.getElementById('main-header')
 
 // Scroll Event for Header
 window.addEventListener('scroll', () => {
-    console.log(scrollY)
     if (scrollY >= 126) {
         header.style.background = "#2a1236"
     }
