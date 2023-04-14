@@ -3,6 +3,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.active-nav {
+  background-color: #fff;
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  border-radius: 1.5rem;
+  color: #555;
+}
+
 #showcase {
   background-image: url("/public/assets/showcase-bg.svg");
   background-position: right top 3rem;

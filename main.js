@@ -31,12 +31,29 @@ const observer = new IntersectionObserver(entries => {
       // Animate the progress bar's width from 0% to its maximum value
       entry.target.style.width = `${max}%`;
     }
+    else {
+      // Reset the progress bar width to 0
+      entry.target.style.width = '0%';
+    }
   });
 });
 
 // Observe each progress bar
 progressBars.forEach(progressBar => {
-  observer.observe(progressBar);
+    observer.observe(progressBar);
+});
+
+
+// Set active link
+function setActiveLink(event) {
+  const links = document.querySelectorAll('.nav-link');
+  links.forEach(link => link.classList.remove('active-nav'));
+  event.currentTarget.classList.add('active-nav');
+}
+
+const navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach(link => {
+  link.addEventListener('click', setActiveLink);
 });
 
 
