@@ -1,56 +1,14 @@
-
-
-// =-----------------------
-
-const skillBarAmounts = document.querySelectorAll('.skill-bar-amount')
-const skillBarWidths = document.querySelectorAll('.skill-bar-width')
+// DOM Elements
+const progressBars = document.querySelectorAll('.progress-bar')
 const contactForm = document.getElementById('contact-form')
 const toastSuccess = document.getElementById('toast-success')
 const textFields = document.querySelectorAll('.text-field')
 const dismissToastBtn = document.getElementById('dismiss-toast')
-const skills = document.querySelectorAll('.skill')
 const header = document.getElementById('main-header')
 
-// document.addEventListener('scroll', (e) => {
-//     if (scrollY >= 3864) {
-//         // alert(2344)
-//         skillBarAmount.style.width = "0";
-//         skillBarAmount.style.animationName = "progress";
-//         skillBarAmount.style.animationDuration = "2s";
-//         skillBarAmount.style.width = "10rem";
 
-//         skillBarWidth.style.width = "12rem";
-//         skillBarWidth.style.animationName = "reduce";
-//         skillBarWidth.style.animationDuration = "2s";
-//         skillBarWidth.style.width = "2rem";
-//     }
-// })
-
-
+// Scroll Event for Header
 window.addEventListener('scroll', () => {
-    skills.forEach(skill => {
-        const elementTop = skill.getBoundingClientRect().top
-
-        if (elementTop < window.innerHeight) {
-          // Do something when element is in viewport
-            skillBarAmounts.forEach(skillBarAmount => {
-                skillBarAmount.style.width = "0";
-              skillBarAmount.style.animationName = "progress";
-              skillBarAmount.style.animationDuration = "2s";
-              skillBarAmount.style.width = "10rem";
-            }) 
-
-            skillBarWidths.forEach(skillBarWidth => {
-                
-                        skillBarWidth.style.width = "12rem";
-                        skillBarWidth.style.animationName = "reduce";
-                        skillBarWidth.style.animationDuration = "2s";
-                        skillBarWidth.style.width = "2rem";
-            })
-        }
-    })
-//   const elementTop = html.getBoundingClientRect().top;
-
     // console.log(scrollY)
     if (scrollY >= 126) {
         header.style.backgroundColor = "#2a1236"
@@ -59,6 +17,28 @@ window.addEventListener('scroll', () => {
         header.style.backgroundColor = 'transparent'
     }
 });
+
+
+// Create an intersection observer
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Get the maximum value for the progress bar from its data-value attribute
+      const max = entry.target.dataset.value;
+      
+      // Animate the progress bar's width from 0% to its maximum value
+      entry.target.style.width = `${max}%`;
+    }
+  });
+});
+
+// Observe each progress bar
+progressBars.forEach(progressBar => {
+  observer.observe(progressBar);
+});
+
+
+
 
 
 // contactForm.addEventListener('submit', (e) => {
@@ -87,12 +67,9 @@ fetch(contactForm.action, {
 }).then(
     response => response.json()
 ).then((jsonResponse) => {
-    // you can put any JS code here          data-dismiss-target="#toast-success"
 
-    console.log(jsonResponse)
+    // Display success toast
     toastSuccess.style.visibility = "visible"
-    // toastSuccess.style.animationName = "slide-left"
-    // toastSuccess.style.animationDuration = "1.1s"
     toastSuccess.classList.add('perform-slide')
     textFields.forEach(textField => {
         textField.value = ''

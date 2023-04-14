@@ -27,6 +27,11 @@ html {
   visibility: hidden;
 }
 
+.progress-bar {
+  width: 0%;
+  transition: 2s width ease-in-out;
+}
+
 .perform-slide {
   animation-name: slide-left;
   animation-duration: 1.1s;

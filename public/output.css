@@ -1190,6 +1190,42 @@ input:checked + .toggle-bg {
   top: 23rem;
 }
 
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
+.bottom-\[\.26rem\] {
+  bottom: .26rem;
+}
+
+.bottom-\[\.27rem\] {
+  bottom: .27rem;
+}
+
+.bottom-\[\.28rem\] {
+  bottom: .28rem;
+}
+
+.bottom-\[\.30rem\] {
+  bottom: .30rem;
+}
+
+.bottom-\[\.45rem\] {
+  bottom: .45rem;
+}
+
+.bottom-\[\.42rem\] {
+  bottom: .42rem;
+}
+
+.bottom-\[\.40rem\] {
+  bottom: .40rem;
+}
+
+.bottom-\[\.39rem\] {
+  bottom: .39rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -1498,6 +1534,46 @@ input:checked + .toggle-bg {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[20rem\] {
+  width: 20rem;
+}
+
+.w-\[15rem\] {
+  width: 15rem;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[12rem\] {
+  width: 12rem;
+}
+
+.w-\[95\%\] {
+  width: 95%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-\[88\%\] {
+  width: 88%;
+}
+
+.w-\[85\%\] {
+  width: 85%;
+}
+
+.w-\[78\%\] {
+  width: 78%;
+}
+
+.w-\[75\%\] {
+  width: 75%;
 }
 
 .max-w-\[12rem\] {
