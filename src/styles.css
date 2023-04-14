@@ -24,7 +24,7 @@ html {
 }
 
 #toast-success {
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 
 .progress-bar {
