@@ -9,6 +9,7 @@ const toastSuccess = document.getElementById('toast-success')
 const textFields = document.querySelectorAll('.text-field')
 const dismissToastBtn = document.getElementById('dismiss-toast')
 const skills = document.querySelectorAll('.skill')
+const header = document.getElementById('main-header')
 
 // document.addEventListener('scroll', (e) => {
 //     if (scrollY >= 3864) {
@@ -32,7 +33,6 @@ window.addEventListener('scroll', () => {
 
         if (elementTop < window.innerHeight) {
           // Do something when element is in viewport
-          console.log("VIEWPORT REACHED")
             skillBarAmounts.forEach(skillBarAmount => {
                 skillBarAmount.style.width = "0";
               skillBarAmount.style.animationName = "progress";
@@ -51,6 +51,13 @@ window.addEventListener('scroll', () => {
     })
 //   const elementTop = html.getBoundingClientRect().top;
 
+    // console.log(scrollY)
+    if (scrollY >= 126) {
+        header.style.backgroundColor = "#2a1236"
+    }
+    else {
+        header.style.backgroundColor = 'transparent'
+    }
 });
 
 

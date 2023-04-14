@@ -63,41 +63,56 @@
       <div class="py-4 overflow-y-auto">
         <!-- sidebar menu -->
         <ul class="font-medium mt-5">
-          <li class="border-t border-neutral-700 py-4">
+          <li
+            class="border-t border-neutral-700 py-4"
+            data-drawer-hide="drawer-navigation"
+          >
             <a
-              href="#"
+              href="#home"
               class="flex items-center p-2 text-white rounded-lg dark:text-white dark:hover:bg-gray-700"
             >
               <span class="ml-3">Home</span>
             </a>
           </li>
-          <li class="border-t border-neutral-700 py-4">
+          <li
+            class="border-t border-neutral-700 py-4"
+            data-drawer-hide="drawer-navigation"
+          >
             <a
-              href="#"
+              href="#about"
               class="flex items-center p-2 text-white rounded-lg dark:text-white dark:hover:bg-gray-700"
             >
               <span class="ml-3">About</span>
             </a>
           </li>
-          <li class="border-t border-neutral-700 py-4">
+          <li
+            class="border-t border-neutral-700 py-4"
+            data-drawer-hide="drawer-navigation"
+          >
             <a
-              href="#"
+              href="#showcase"
               class="flex items-center p-2 text-white rounded-lg dark:text-white dark:hover:bg-gray-700"
             >
               <span class="ml-3">Portfolio</span>
             </a>
           </li>
-          <li class="border-t border-neutral-700 py-4">
+          <li
+            class="border-t border-neutral-700 py-4"
+            data-drawer-hide="drawer-navigation"
+          >
             <a
-              href="#"
+              href="#services"
               class="flex items-center p-2 text-white rounded-lg dark:text-white dark:hover:bg-gray-700"
             >
               <span class="ml-3">Services</span>
             </a>
           </li>
-          <li class="border-t border-b border-neutral-700 py-4">
+          <li
+            class="border-t border-b border-neutral-700 py-4"
+            data-drawer-hide="drawer-navigation"
+          >
             <a
-              href="#"
+              href="#contact"
               class="flex items-center p-2 text-white rounded-lg dark:text-white dark:hover:bg-gray-700"
             >
               <span class="ml-3">Contact</span>
@@ -129,11 +144,15 @@
         </a>
       </div>
     </div>
+
     <div
-      class="bg-[#21082D] bg-[url('/src/assets/hero-bg.jpg')] bg-contain lg:bg-cover bg-no-repeat text-[#D0F4E6] min-h-[120vh] py-4 mobile8:py-12 relative z-10"
+      class="bg-[#21082D] bg-[url('/src/assets/hero-bg.jpg')] bg-contain lg:bg-cover bg-no-repeat text-[#D0F4E6] min-h-[120vh] py-4 mobile8:py-0 relative z-10"
     >
       <!-- header -->
-      <header class="flex items-center pl-6 pr-6 mobile:pl-20 mobile:pr-32">
+      <header
+        class="flex items-center py-12 pl-6 pr-6 mobile:pl-20 mobile:pr-32 sticky top-0 z-50 bg-opacity-10"
+        id="main-header"
+      >
         <div
           class="flex items-center gap-2 scale-50 mobile5:scale-100 mobile5:gap-5"
         >
@@ -148,15 +167,13 @@
         </div>
         <nav class="ml-auto hidden lg2:block">
           <ul class="flex gap-20 items-center text-white font-[500]">
-            <li
-              class="hover:text-white text-neutral-600 rounded-3xl bg-white px-8 py-2"
-            >
-              <a href="">Home</a>
+            <li class="text-neutral-600 rounded-3xl bg-white px-8 py-2">
+              <a href="#hero">Home</a>
             </li>
-            <li class="hover:text-white"><a href="">About</a></li>
-            <li class="hover:text-white"><a href="">Portfolio</a></li>
-            <li class="hover:text-white"><a href="">Services</a></li>
-            <li class="hover:text-white"><a href="">Contact</a></li>
+            <li class=""><a href="#about">About</a></li>
+            <li class=""><a href="#showcase">Portfolio</a></li>
+            <li class=""><a href="#services">Services</a></li>
+            <li class=""><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <!-- Hamburger -->
@@ -181,7 +198,7 @@
       <!-- hero -->
       <section
         id="hero"
-        class="mt-0 mobile8:mt-32 ml-0 mobile8:ml-1 mobile7:ml-5 mobile4:ml-12 mobile2:ml-20 md:ml-32 mr-4 mobile4:mr-4 lg2:mr-32 flex flex-col lg2:flex-row gap-10 lg2:items-center scale-50 mobile8:scale-90 mobile7:scale-100"
+        class="mt-0 mobile8:mt-20 ml-0 mobile8:ml-1 mobile7:ml-5 mobile4:ml-12 mobile2:ml-20 md:ml-32 mr-4 mobile4:mr-4 lg2:mr-32 flex flex-col lg2:flex-row gap-10 lg2:items-center scale-50 mobile8:scale-90 mobile7:scale-100"
       >
         <div class="w-12/12 mobile4:w-9/12">
           <h1
@@ -199,7 +216,7 @@
             Designing for the user, building for success.
           </h2>
         </div>
-        <a href="">
+        <a href="#contact">
           <button
             class="bg-gradient-to-r from-[#b318bf] to-[#8D2AF0] text-white w-48 h-14 rounded-lg text-xl font-['Kumbh_Sans']"
             data-aos="flip-up"
@@ -210,16 +227,17 @@
       </section>
     </div>
     <!--  -->
-    <section class="bg-white h-[15vh] relative">
+    <section class="bg-white h-[15vh] relative z-0">
       <img
         src="/src/assets/bg-bg.svg"
         alt=""
-        class="absolute top-[-10rem] right-80 z-[0]"
+        class="absolute top-[-10rem] right-80 z-0"
       />
     </section>
     <!-- Who I am -->
     <section
-      class="bg-[#21082d] bg-[length:20rem] min-h-screen relative z-10 py-20 md4:py-0 pl-5 mobile4:pl-12 mobile3:pl-16 lg:pl-36 lg2:pl-48 pr-5 mobile4:pr-12 mobile3:pr-36 md4:pr-72 flex flex-col md4:flex-row items-center justify-center text-[#d0f4e6]"
+      class="bg-[#21082d] bg-[length:20rem] min-h-screen relative z-5 py-20 md4:py-0 pl-5 mobile4:pl-12 mobile3:pl-16 lg:pl-36 lg2:pl-48 pr-5 mobile4:pr-12 mobile3:pr-36 md4:pr-72 flex flex-col md4:flex-row items-center justify-center text-[#d0f4e6]"
+      id="about"
       style="
         background-image: url('/src/assets/wiam-bg-2.svg'),
           url('/src/assets/wiam-bg-1.svg'), url('/src/assets/wiam-bg-3.svg'),
@@ -346,6 +364,7 @@
     <!-- What I offer -->
     <section
       class="bg-[#391948] text-white pt-20 pb-32 px-5 mobile4:px-10 mobile:px-20 min-h-screen relative"
+      id="services"
     >
       <h1 class="text-4xl font-['Jost'] font-[600] scale-75 mobile7:scale-100">
         What I Offer
@@ -467,7 +486,7 @@
     </section>
 
     <!-- Toolbox -->
-    <section class="bg-[#13001C]">
+    <section class="bg-[#13001C]" id="toolbox">
       <div
         class="bg-[url('/src/assets/toolbox-bg.svg')] pt-24 pb-10 mobile5:pb-32 text-center"
         style="
@@ -641,6 +660,7 @@
     <!-- contact -->
     <section
       class="grid grid-cols-1 md3:grid-cols-2 font-['Kumbh_Sans'] relative"
+      id="contact"
     >
       <div
         class="bg-[#391948] flex flex-col items-center justify-center h-[50vh] md3:h-[inherit] relative"
@@ -742,14 +762,14 @@
           class="flex justify-end gap-8 mt-16 scale-75 mobile6:scale-100 mr-0 mobile6:mr-16"
         >
           <!-- contact -->
-          <a href="">
+          <a href="tel:+233553219740" target="_blank">
             <div
               class="bg-white rounded-full w-16 h-16 flex justify-center items-center scale-75"
             >
               <img src="/src/assets/call.svg" alt="" />
             </div>
           </a>
-          <a href="">
+          <a href="mailto:enocansah@gmail.com" target="_blank">
             <div
               class="bg-white rounded-full w-16 h-16 flex justify-center items-center scale-75"
             >
