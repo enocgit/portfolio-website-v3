@@ -15,6 +15,8 @@ module.exports = {
       
       'mobile6': '280px',
 
+      'mobile10': '334px',
+
       'mobile9': '360px',
 
       'mobile4': '410px',

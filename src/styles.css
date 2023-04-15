@@ -27,7 +27,7 @@ html {
 }
 
 .service:hover {
-  transform: skew(5deg);
+  transform: skew(2deg);
   transition: 0.5s transform cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
