@@ -5,6 +5,8 @@ const toastSuccess = document.getElementById('toast-success')
 const textFields = document.querySelectorAll('.text-field')
 const dismissToastBtn = document.getElementById('dismiss-toast')
 const header = document.getElementById('main-header')
+const hireMeBtn = document.getElementById('hire-me-btn')
+const legendText = document.getElementById('legend-text')
 
 
 // Scroll Event for Header
@@ -57,7 +59,10 @@ navLinks.forEach(link => {
 });
 
 
-
+// Legend text content
+hireMeBtn.addEventListener('click', () => {
+  legendText.textContent = "Hire me"
+})
 
 
 // contactForm.addEventListener('submit', (e) => {
