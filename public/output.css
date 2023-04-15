@@ -1220,6 +1220,18 @@ input:checked + .toggle-bg {
   right: 2.5rem;
 }
 
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
+.bottom-36 {
+  bottom: 9rem;
+}
+
+.bottom-32 {
+  bottom: 8rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -2075,6 +2087,11 @@ input:checked + .toggle-bg {
   padding-right: -3rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -2179,6 +2196,15 @@ input:checked + .toggle-bg {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-\[0\.6rem\] {
+  font-size: 0.6rem;
+}
+
 .font-\[500\] {
   font-weight: 500;
 }
@@ -2221,6 +2247,18 @@ input:checked + .toggle-bg {
 
 .leading-loose {
   line-height: 2;
+}
+
+.leading-4 {
+  line-height: 1rem;
+}
+
+.leading-3 {
+  line-height: .75rem;
+}
+
+.leading-tight {
+  line-height: 1.25;
 }
 
 .text-\[\#67687A\] {
@@ -2286,6 +2324,16 @@ input:checked + .toggle-bg {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-neutral-500 {
+  --tw-text-opacity: 1;
+  color: rgb(115 115 115 / var(--tw-text-opacity));
+}
+
+.text-neutral-600 {
+  --tw-text-opacity: 1;
+  color: rgb(82 82 82 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -2617,6 +2665,11 @@ input:checked + .toggle-bg {
     padding-top: 0px;
     padding-bottom: 0px;
   }
+
+  .mobile8\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 @media (min-width: 240px) {
@@ -2642,6 +2695,14 @@ input:checked + .toggle-bg {
 @media (min-width: 280px) {
   .mobile6\:right-10 {
     right: 2.5rem;
+  }
+
+  .mobile6\:bottom-24 {
+    bottom: 6rem;
+  }
+
+  .mobile6\:right-16 {
+    right: 4rem;
   }
 
   .mobile6\:mr-16 {
@@ -2731,6 +2792,16 @@ input:checked + .toggle-bg {
   .mobile4\:pr-12 {
     padding-right: 3rem;
   }
+
+  .mobile4\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .mobile4\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 434px) {
@@ -2768,6 +2839,10 @@ input:checked + .toggle-bg {
 }
 
 @media (min-width: 561px) {
+  .mobile\:bottom-32 {
+    bottom: 8rem;
+  }
+
   .mobile\:h-32 {
     height: 8rem;
   }
@@ -2800,6 +2875,30 @@ input:checked + .toggle-bg {
     right: 1.25rem;
   }
 
+  .sm\:right-16 {
+    right: 4rem;
+  }
+
+  .sm\:bottom-36 {
+    bottom: 9rem;
+  }
+
+  .sm\:bottom-32 {
+    bottom: 8rem;
+  }
+
+  .sm\:right-24 {
+    right: 6rem;
+  }
+
+  .sm\:right-20 {
+    right: 5rem;
+  }
+
+  .sm\:right-14 {
+    right: 3.5rem;
+  }
+
   .sm\:w-80 {
     width: 20rem;
   }
@@ -2813,6 +2912,12 @@ input:checked + .toggle-bg {
   .sm\:scale-\[\.80\] {
     --tw-scale-x: .80;
     --tw-scale-y: .80;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .sm\:scale-75 {
+    --tw-scale-x: .75;
+    --tw-scale-y: .75;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -2842,6 +2947,16 @@ input:checked + .toggle-bg {
 
   .sm\:pl-10 {
     padding-left: 2.5rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
