@@ -7,6 +7,7 @@ const dismissToastBtn = document.getElementById('dismiss-toast')
 const header = document.getElementById('main-header')
 const hireMeBtn = document.getElementById('hire-me-btn')
 const legendText = document.getElementById('legend-text')
+const projectImages = document.querySelectorAll('.project-image')
 
 
 // Scroll Event for Header
@@ -61,9 +62,52 @@ navLinks.forEach(link => {
 
 // Legend text content
 hireMeBtn.addEventListener('click', () => {
-  legendText.textContent = "Hire me"
+  legendText.textContent = "Ready for you"
 })
 
+
+// Portfolio Image Changing on Hover
+// JavaScript
+
+projectImages.forEach(projectImage => {
+  const dataString = projectImage.dataset.images;
+  const imageURLArray = JSON.parse(dataString);
+  let currentIndex = 0; // initialize the current index to 0
+  let intervalId; // initialize the interval ID variable
+
+  function startInterval() {
+    // start a new interval to change the image every 500ms
+    intervalId = setInterval(() => {
+      // update the image source to the next one in the array
+      projectImage.src = imageURLArray[currentIndex];
+      // increment the current index, wrapping around to 0 if necessary
+      currentIndex = (currentIndex + 1) % imageURLArray.length;
+    }, 1000);
+  }
+
+  function stopInterval() {
+    // clear the interval when the mouse leaves the image
+    clearInterval(intervalId);
+  }
+
+  projectImage.addEventListener('mouseenter', () => {
+    startInterval();
+  });
+
+  projectImage.addEventListener('mouseleave', () => {
+    stopInterval();
+  });
+});
+
+
+
+// projectImages.forEach(projectImage => {
+//   const dataString = projectImage.dataset.images
+//   const imageURLArray = JSON.parse(dataString)
+//   projectImage.addEventListener('mouseout', () => {
+//     projectImage.src = imageURLArray[2]
+//   })
+// })
 
 // contactForm.addEventListener('submit', (e) => {
 //     e.preventDefault()
