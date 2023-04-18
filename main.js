@@ -8,6 +8,8 @@ const header = document.getElementById('main-header')
 const hireMeBtn = document.getElementById('hire-me-btn')
 const legendText = document.getElementById('legend-text')
 const projectImages = document.querySelectorAll('.project-image')
+const heroTitle = document.getElementById('hero-title')
+const heroSubs = document.querySelectorAll('.hero-sub')
 // const heroGIF = document.getElementById('hero-gif')
 // const heroHireMeImg = document.getElementById('hero-hire-me-img')
 
@@ -101,20 +103,70 @@ projectImages.forEach(projectImage => {
 });
 
 
-// window.addEventListener('load', () => {
-//   heroGIF.style.opacity = '1'
-//   heroGIF.addEventListener('animationend', function() {
-//     // Animation complete, change image
-//     // heroGIF.style.bottom = '20rem'
-//     // heroHireMeImg.classList.remove('opacity-0')
-//     // heroHireMeImg.classList.add('opacity-1')
-//     heroHireMeImg.style.opacity = '1'
-//   });
+window.addEventListener('load', () => {
+  // heroGIF.style.opacity = '1'
+  // heroGIF.addEventListener('animationend', function() {
+  //   // Animation complete, change image
+  //   // heroGIF.style.bottom = '20rem'
+  //   // heroHireMeImg.classList.remove('opacity-0')
+  //   // heroHireMeImg.classList.add('opacity-1')
+  //   // heroHireMeImg.style.opacity = '1'
+  // });
+  setInterval(() => {
+    
+    neonEffect('add', 5000)
+    neonEffect('remove', 5900)
+  
+    heroSubNeon(0, 'add', 6400)
+    heroSubNeon(0, 'remove', 6600)
+    heroSubNeon(1, 'add', 6800)
+    heroSubNeon(1, 'remove', 6900)
+    heroSubNeon(2, 'add', 7000)
+    heroSubNeon(2, 'remove', 7100)
+    heroSubNeon(3, 'add', 7200)
+    heroSubNeon(3, 'remove', 7300)
+    heroSubNeon(4, 'add', 7400)
+    heroSubNeon(4, 'remove', 7500)
+    heroSubNeon(5, 'add', 7600)
+    heroSubNeon(5, 'remove', 7700)
+    heroSubNeon(6, 'add', 7800)
+    heroSubNeon(6, 'remove', 8100)
+  }, 8500);
+})
+
+// heroSubs.forEach((heroSub) => {
+//   setTimeout(() => {
+//     heroSub.style.transition = '1.5s all ease-in-out'
+//       heroSub.classList.add('font-effect-neon')
+//     }, 6200);
+//     setTimeout(() => {
+//     heroSub.classList.remove('font-effect-neon')
+//   }, 6900);
 // })
 
-// Marquee
-function marqTest(){
-  console.log('finished')
+
+function neonEffect(action, timeout){
+  setTimeout(() => {
+    heroTitle.style.transition = '1.5s all ease-in-out'
+    if (action === 'add'){
+      heroTitle.classList.add('font-effect-neon')
+    }
+    else if (action === 'remove'){
+      heroTitle.classList.remove('font-effect-neon')
+    }
+  }, timeout);
+}
+
+function heroSubNeon(child, action, timeout){
+  setTimeout(() => {
+    // heroTitle.style.transition = '.2s all ease-in-out'
+    if (action === 'add'){
+      heroSubs[child].classList.add('font-effect-neon')
+    }
+    else if (action === 'remove'){
+      heroSubs[child].classList.remove('font-effect-neon')
+    }
+  }, timeout);
 }
 
 // projectImages.forEach(projectImage => {
