@@ -154,8 +154,8 @@
       >
         <img
           src=""
-          alt="profile image"
-          class="w-14 h-14 rounded-full bg-white shrink-0 hidden mobile9:block"
+          alt=""
+          class="w-14 h-14 rounded-full bg-[violet] text-neutral-800 shrink-0 hidden text-center mobile9:block"
         />
         <h1 class="text-2xl mobile6:text-3xl font-[500] text-white">
           Enoch Ansah
@@ -199,6 +199,13 @@
         id="hero"
         class="mt-0 mobile8:mt-0 pt-[14.5rem] ml-0 mobile8:ml-1 mobile7:ml-5 mobile4:ml-12 mobile2:ml-20 md:ml-32 mr-4 mobile4:mr-4 lg2:mr-32 flex flex-col lg2:flex-row gap-10 lg2:items-center scale-50 mobile8:scale-90 mobile7:scale-100"
       >
+        <img
+          src="/src/assets/hero-gif.gif"
+          alt=""
+          class="w-20 opacity-0 absolute bottom-[33rem] mobile10:bottom-[27rem] mobile3:bottom-[26rem] sm:bottom-[22rem] lg3:bottom-56"
+          id="hero-gif"
+          style="transition: opacity 10s ease-in-out"
+        />
         <div class="w-12/12 mobile4:w-9/12">
           <h1
             class="text-5xl md:text-7xl leading-[1.2] font-[700] font-['Jost']"
@@ -215,7 +222,7 @@
             Designing for the user, building for success.
           </h2>
         </div>
-        <a href="#contact">
+        <a href="#contact" class="relative">
           <button
             class="bg-gradient-to-r from-[#b318bf] to-[#8D2AF0] text-white w-48 h-14 rounded-lg text-xl font-['Kumbh_Sans']"
             data-aos="flip-up"
@@ -223,6 +230,12 @@
           >
             Hire me
           </button>
+          <img
+            src="/src/assets/hero-hire-me-img.png"
+            alt=""
+            class="absolute w-20 bottom-5 left-36 opacity-0 transition"
+            id="hero-hire-me-img"
+          />
         </a>
       </section>
     </div>
@@ -259,14 +272,14 @@
         <p
           class="mt-5 leading-loose md4:w-10/12"
           data-aos="zoom-in-up"
-          data-aos-duration="1400"
+          data-aos-duration="1000"
         >
           Hello, I'm Enoch - a web developer and UI/UX designer with two years
           of experience. My passion for technology, combined with my
           problem-solving skills, drives me to create seamless and user-friendly
           digital experiences.
         </p>
-        <p class="mt-10" data-aos="zoom-in-up" data-aos-duration="1700">
+        <p class="mt-10" data-aos="fade-up-left" data-aos-duration="1200">
           Let&apos;s work together to bring your vision to life.
         </p>
       </div>
@@ -275,8 +288,9 @@
         alt=""
         class="w-72 mt-10 md4:mt-0"
       />
+      <!-- circle -->
       <div
-        class="border w-28 h-28 rounded-full absolute right-16 bottom-2 mobile3:bottom-[initial] flex items-center justify-center"
+        class="border w-28 h-28 rounded-full absolute right-16 bottom-2 mobile3:bottom-[initial] flex items-center justify-center scale-[.5] mobile3:scale-100"
       >
         <span
           class="inline-block bg-[#f4d0e1] rounded-full w-20 h-20 inside-circle"
@@ -349,7 +363,7 @@
 
         <!-- work -->
         <div
-          data-aos="zoom-in-down"
+          data-aos="fade-left"
           data-aos-duration="1000"
           class="relative max-w-80"
         >
@@ -488,7 +502,7 @@
         </div>
         <!-- work -->
         <div
-          data-aos="zoom-in-down"
+          data-aos="fade-right"
           data-aos-duration="1000"
           class="relative max-w-80"
         >

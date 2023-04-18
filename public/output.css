@@ -1064,6 +1064,12 @@ input:checked + .toggle-bg {
   }
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
@@ -1140,6 +1146,10 @@ input:checked + .toggle-bg {
   bottom: 1rem;
 }
 
+.bottom-72 {
+  bottom: 18rem;
+}
+
 .bottom-\[\.39rem\] {
   bottom: .39rem;
 }
@@ -1206,6 +1216,82 @@ input:checked + .toggle-bg {
 
 .top-\[29rem\] {
   top: 29rem;
+}
+
+.bottom-9 {
+  bottom: 2.25rem;
+}
+
+.bottom-96 {
+  bottom: 24rem;
+}
+
+.bottom-\[22rem\] {
+  bottom: 22rem;
+}
+
+.bottom-\[26rem\] {
+  bottom: 26rem;
+}
+
+.bottom-\[29rem\] {
+  bottom: 29rem;
+}
+
+.bottom-\[28rem\] {
+  bottom: 28rem;
+}
+
+.bottom-\[27rem\] {
+  bottom: 27rem;
+}
+
+.bottom-\[32rem\] {
+  bottom: 32rem;
+}
+
+.bottom-\[50rem\] {
+  bottom: 50rem;
+}
+
+.bottom-\[40rem\] {
+  bottom: 40rem;
+}
+
+.bottom-\[30rem\] {
+  bottom: 30rem;
+}
+
+.bottom-\[35rem\] {
+  bottom: 35rem;
+}
+
+.bottom-\[33rem\] {
+  bottom: 33rem;
+}
+
+.bottom-20 {
+  bottom: 5rem;
+}
+
+.bottom-16 {
+  bottom: 4rem;
+}
+
+.left-10 {
+  left: 2.5rem;
+}
+
+.left-36 {
+  left: 9rem;
+}
+
+.bottom-6 {
+  bottom: 1.5rem;
+}
+
+.bottom-5 {
+  bottom: 1.25rem;
 }
 
 .z-0 {
@@ -1580,6 +1666,12 @@ input:checked + .toggle-bg {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.scale-\[\.5\] {
+  --tw-scale-x: .5;
+  --tw-scale-y: .5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -1825,6 +1917,11 @@ input:checked + .toggle-bg {
 .bg-\[\#f4d0e1\] {
   --tw-bg-opacity: 1;
   background-color: rgb(244 208 225 / var(--tw-bg-opacity));
+}
+
+.bg-\[violet\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 130 238 / var(--tw-bg-opacity));
 }
 
 .bg-blue-700 {
@@ -2302,6 +2399,10 @@ input:checked + .toggle-bg {
   transition-duration: 150ms;
 }
 
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
@@ -2628,6 +2729,12 @@ input:checked + .toggle-bg {
   }
 }
 
+@media (min-width: 334px) {
+  .mobile10\:bottom-\[27rem\] {
+    bottom: 27rem;
+  }
+}
+
 @media (min-width: 360px) {
   .mobile9\:block {
     display: block;
@@ -2687,6 +2794,16 @@ input:checked + .toggle-bg {
     bottom: initial;
   }
 
+  .mobile3\:bottom-\[26rem\] {
+    bottom: 26rem;
+  }
+
+  .mobile3\:scale-100 {
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .mobile3\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2732,6 +2849,10 @@ input:checked + .toggle-bg {
 @media (min-width: 640px) {
   .sm\:right-14 {
     right: 3.5rem;
+  }
+
+  .sm\:bottom-\[22rem\] {
+    bottom: 22rem;
   }
 
   .sm\:w-80 {
@@ -2878,5 +2999,11 @@ input:checked + .toggle-bg {
 
   .lg2\:pl-48 {
     padding-left: 12rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .lg3\:bottom-56 {
+    bottom: 14rem;
   }
 }
