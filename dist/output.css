@@ -1806,6 +1806,11 @@ input:checked + .toggle-bg {
   border-color: rgb(64 64 64 / var(--tw-border-opacity));
 }
 
+.border-red-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(249 128 128 / var(--tw-border-opacity));
+}
+
 .bg-\[\#13001C\] {
   --tw-bg-opacity: 1;
   background-color: rgb(19 0 28 / var(--tw-bg-opacity));
@@ -1902,6 +1907,36 @@ input:checked + .toggle-bg {
 
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
+}
+
+.bg-\[\#f8b8f8\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 184 248 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ffd6ff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 214 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ffe8ff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 232 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#fff5ff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 245 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#fffdff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 253 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ffcfff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 207 255 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
