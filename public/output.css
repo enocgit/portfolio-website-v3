@@ -1735,6 +1735,14 @@ input:checked + .toggle-bg {
   border-radius: 0.5rem;
 }
 
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.rounded-\[100\%\] {
+  border-radius: 100%;
+}
+
 .rounded-b-3xl {
   border-bottom-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
@@ -1902,6 +1910,11 @@ input:checked + .toggle-bg {
 
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
+}
+
+.bg-\[\#795547\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(121 85 71 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
