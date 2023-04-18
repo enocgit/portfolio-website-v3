@@ -8,8 +8,8 @@ const header = document.getElementById('main-header')
 const hireMeBtn = document.getElementById('hire-me-btn')
 const legendText = document.getElementById('legend-text')
 const projectImages = document.querySelectorAll('.project-image')
-const heroGIF = document.getElementById('hero-gif')
-const heroHireMeImg = document.getElementById('hero-hire-me-img')
+// const heroGIF = document.getElementById('hero-gif')
+// const heroHireMeImg = document.getElementById('hero-hire-me-img')
 
 // Scroll Event for Header
 window.addEventListener('scroll', () => {
@@ -101,16 +101,16 @@ projectImages.forEach(projectImage => {
 });
 
 
-window.addEventListener('load', () => {
-  heroGIF.style.opacity = '1'
-  heroGIF.addEventListener('animationend', function() {
-    // Animation complete, change image
-    // heroGIF.style.bottom = '20rem'
-    // heroHireMeImg.classList.remove('opacity-0')
-    // heroHireMeImg.classList.add('opacity-1')
-    heroHireMeImg.style.opacity = '1'
-  });
-})
+// window.addEventListener('load', () => {
+//   heroGIF.style.opacity = '1'
+//   heroGIF.addEventListener('animationend', function() {
+//     // Animation complete, change image
+//     // heroGIF.style.bottom = '20rem'
+//     // heroHireMeImg.classList.remove('opacity-0')
+//     // heroHireMeImg.classList.add('opacity-1')
+//     heroHireMeImg.style.opacity = '1'
+//   });
+// })
 
 // Marquee
 function marqTest(){

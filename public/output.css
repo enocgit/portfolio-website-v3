@@ -1146,12 +1146,16 @@ input:checked + .toggle-bg {
   bottom: 1rem;
 }
 
-.bottom-72 {
-  bottom: 18rem;
+.bottom-5 {
+  bottom: 1.25rem;
 }
 
 .bottom-\[\.39rem\] {
   bottom: .39rem;
+}
+
+.bottom-\[33rem\] {
+  bottom: 33rem;
 }
 
 .bottom-\[4\.6rem\] {
@@ -1164,6 +1168,10 @@ input:checked + .toggle-bg {
 
 .left-0 {
   left: 0px;
+}
+
+.left-36 {
+  left: 9rem;
 }
 
 .right-0 {
@@ -1216,82 +1224,6 @@ input:checked + .toggle-bg {
 
 .top-\[29rem\] {
   top: 29rem;
-}
-
-.bottom-9 {
-  bottom: 2.25rem;
-}
-
-.bottom-96 {
-  bottom: 24rem;
-}
-
-.bottom-\[22rem\] {
-  bottom: 22rem;
-}
-
-.bottom-\[26rem\] {
-  bottom: 26rem;
-}
-
-.bottom-\[29rem\] {
-  bottom: 29rem;
-}
-
-.bottom-\[28rem\] {
-  bottom: 28rem;
-}
-
-.bottom-\[27rem\] {
-  bottom: 27rem;
-}
-
-.bottom-\[32rem\] {
-  bottom: 32rem;
-}
-
-.bottom-\[50rem\] {
-  bottom: 50rem;
-}
-
-.bottom-\[40rem\] {
-  bottom: 40rem;
-}
-
-.bottom-\[30rem\] {
-  bottom: 30rem;
-}
-
-.bottom-\[35rem\] {
-  bottom: 35rem;
-}
-
-.bottom-\[33rem\] {
-  bottom: 33rem;
-}
-
-.bottom-20 {
-  bottom: 5rem;
-}
-
-.bottom-16 {
-  bottom: 4rem;
-}
-
-.left-10 {
-  left: 2.5rem;
-}
-
-.left-36 {
-  left: 9rem;
-}
-
-.bottom-6 {
-  bottom: 1.5rem;
-}
-
-.bottom-5 {
-  bottom: 1.25rem;
 }
 
 .z-0 {
@@ -2790,12 +2722,12 @@ input:checked + .toggle-bg {
 }
 
 @media (min-width: 465px) {
-  .mobile3\:bottom-\[initial\] {
-    bottom: initial;
-  }
-
   .mobile3\:bottom-\[26rem\] {
     bottom: 26rem;
+  }
+
+  .mobile3\:bottom-\[initial\] {
+    bottom: initial;
   }
 
   .mobile3\:scale-100 {
@@ -2847,12 +2779,12 @@ input:checked + .toggle-bg {
 }
 
 @media (min-width: 640px) {
-  .sm\:right-14 {
-    right: 3.5rem;
-  }
-
   .sm\:bottom-\[22rem\] {
     bottom: 22rem;
+  }
+
+  .sm\:right-14 {
+    right: 3.5rem;
   }
 
   .sm\:w-80 {
