@@ -54,6 +54,70 @@ body {
   transition: 2s opacity ease-in-out;
 }
 
+.neon-effect {
+  animation-name: neon;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 10s;
+  /* animation-iteration-count: infinite; */
+}
+
+.hero-sub:nth-of-type(1),
+.hero-sub:nth-of-type(2),
+.hero-sub:nth-of-type(3),
+.hero-sub:nth-of-type(4),
+.hero-sub:nth-of-type(5),
+.hero-sub:nth-of-type(6),
+.hero-sub:nth-of-type(7) {
+  animation-name: neon-sub;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  /* animation-iteration-count: infinite; */
+}
+
+.hero-sub:nth-of-type(1) {
+  animation-delay: 7s;
+}
+.hero-sub:nth-of-type(2) {
+  animation-delay: 7.2s;
+}
+.hero-sub:nth-of-type(3) {
+  animation-delay: 7.4s;
+}
+.hero-sub:nth-of-type(4) {
+  animation-delay: 7.6s;
+}
+.hero-sub:nth-of-type(5) {
+  animation-delay: 7.8s;
+}
+.hero-sub:nth-of-type(6) {
+  animation-delay: 8s;
+}
+.hero-sub:nth-of-type(7) {
+  animation-delay: 8.2s;
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 60px #b656ba,
+      0 0 70px #b656ba;
+  }
+  to {
+    text-shadow: initial;
+  }
+}
+
+@keyframes neon-sub {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 60px #b656ba,
+      0 0 70px #b656ba;
+  }
+  to {
+    text-shadow: initial;
+  }
+}
+
 @keyframes grow-shrink {
   from {
     scale: 0.6;

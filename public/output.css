@@ -1456,10 +1456,6 @@ input:checked + .toggle-bg {
   width: 2.5rem;
 }
 
-.w-14 {
-  width: 3.5rem;
-}
-
 .w-16 {
   width: 4rem;
 }
@@ -1727,20 +1723,16 @@ input:checked + .toggle-bg {
   border-radius: 0.2rem;
 }
 
+.rounded-\[100\%\] {
+  border-radius: 100%;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
 
 .rounded-lg {
   border-radius: 0.5rem;
-}
-
-.rounded-3xl {
-  border-radius: 1.5rem;
-}
-
-.rounded-\[100\%\] {
-  border-radius: 100%;
 }
 
 .rounded-b-3xl {
@@ -1910,11 +1902,6 @@ input:checked + .toggle-bg {
 
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
-}
-
-.bg-\[\#795547\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(121 85 71 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -2120,14 +2107,6 @@ input:checked + .toggle-bg {
 
 .font-\[\'Kumbh_Sans\'\] {
   font-family: 'Kumbh Sans';
-}
-
-.font-\[\'Ranchoe\'\] {
-  font-family: 'Ranchoe';
-}
-
-.font-\[\'Rancho\'\] {
-  font-family: 'Rancho';
 }
 
 .text-2xl {

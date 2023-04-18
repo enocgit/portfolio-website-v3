@@ -44,11 +44,42 @@ const observer = new IntersectionObserver(entries => {
   });
 });
 
+// Intersection observer for Hero title 
+const heroObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('neon-effect')
+    }
+    else {
+      entry.target.classList.remove('neon-effect')
+    }
+  })
+})
+
+//Intersection observer for Hero subs
+const heroSubsObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting){
+      entry.target.classList.add('hero-sub')
+    }
+    else {
+      entry.target.classList.remove('hero-sub')
+    }
+  })
+})
+
 // Observe each progress bar
 progressBars.forEach(progressBar => {
     observer.observe(progressBar);
 });
 
+// Observe hero title
+heroObserver.observe(heroTitle)
+
+// Observe hero sub
+heroSubs.forEach(heroSub => {
+  heroSubsObserver.observe(heroSub)
+})
 
 // Set active link
 function setActiveLink(event) {
@@ -103,36 +134,9 @@ projectImages.forEach(projectImage => {
 });
 
 
-window.addEventListener('load', () => {
-  // heroGIF.style.opacity = '1'
-  // heroGIF.addEventListener('animationend', function() {
-  //   // Animation complete, change image
-  //   // heroGIF.style.bottom = '20rem'
-  //   // heroHireMeImg.classList.remove('opacity-0')
-  //   // heroHireMeImg.classList.add('opacity-1')
-  //   // heroHireMeImg.style.opacity = '1'
-  // });
-  setInterval(() => {
-    
-    neonEffect('add', 5000)
-    neonEffect('remove', 5900)
-  
-    heroSubNeon(0, 'add', 6400)
-    heroSubNeon(0, 'remove', 6600)
-    heroSubNeon(1, 'add', 6800)
-    heroSubNeon(1, 'remove', 6900)
-    heroSubNeon(2, 'add', 7000)
-    heroSubNeon(2, 'remove', 7100)
-    heroSubNeon(3, 'add', 7200)
-    heroSubNeon(3, 'remove', 7300)
-    heroSubNeon(4, 'add', 7400)
-    heroSubNeon(4, 'remove', 7500)
-    heroSubNeon(5, 'add', 7600)
-    heroSubNeon(5, 'remove', 7700)
-    heroSubNeon(6, 'add', 7800)
-    heroSubNeon(6, 'remove', 8100)
-  }, 8500);
-})
+// window.addEventListener('load', () => {
+//   
+// })
 
 // heroSubs.forEach((heroSub) => {
 //   setTimeout(() => {
@@ -145,29 +149,29 @@ window.addEventListener('load', () => {
 // })
 
 
-function neonEffect(action, timeout){
-  setTimeout(() => {
-    heroTitle.style.transition = '1.5s all ease-in-out'
-    if (action === 'add'){
-      heroTitle.classList.add('font-effect-neon')
-    }
-    else if (action === 'remove'){
-      heroTitle.classList.remove('font-effect-neon')
-    }
-  }, timeout);
-}
+// function neonEffect(action, timeout){
+//   setTimeout(() => {
+//     heroTitle.style.transition = '1.5s all ease-in-out'
+//     if (action === 'add'){
+//       heroTitle.classList.add('font-effect-neon')
+//     }
+//     else if (action === 'remove'){
+//       heroTitle.classList.remove('font-effect-neon')
+//     }
+//   }, timeout);
+// }
 
-function heroSubNeon(child, action, timeout){
-  setTimeout(() => {
-    // heroTitle.style.transition = '.2s all ease-in-out'
-    if (action === 'add'){
-      heroSubs[child].classList.add('font-effect-neon')
-    }
-    else if (action === 'remove'){
-      heroSubs[child].classList.remove('font-effect-neon')
-    }
-  }, timeout);
-}
+// function heroSubNeon(child, action, timeout){
+//   setTimeout(() => {
+//     // heroTitle.style.transition = '.2s all ease-in-out'
+//     if (action === 'add'){
+//       heroSubs[child].classList.add('font-effect-neon')
+//     }
+//     else if (action === 'remove'){
+//       heroSubs[child].classList.remove('font-effect-neon')
+//     }
+//   }, timeout);
+// }
 
 // projectImages.forEach(projectImage => {
 //   const dataString = projectImage.dataset.images
