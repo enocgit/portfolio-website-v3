@@ -54,14 +54,6 @@ body {
   transition: 2s opacity ease-in-out;
 }
 
-.neon-effect {
-  animation-name: neon;
-  animation-duration: 8s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 10s;
-  /* animation-iteration-count: infinite; */
-}
-
 .hero-sub:nth-of-type(1),
 .hero-sub:nth-of-type(2),
 .hero-sub:nth-of-type(3),
@@ -173,5 +165,15 @@ body {
   #showcase {
     background-position: right bottom;
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 768px) {
+  .neon-effect {
+    animation-name: neon;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 10s;
+    /* animation-iteration-count: infinite; */
   }
 }
