@@ -103,35 +103,35 @@ hireMeBtn.addEventListener('click', () => {
 // Portfolio Image Changing on Hover
 // JavaScript
 
-projectImages.forEach(projectImage => {
-  const dataString = projectImage.dataset.images;
-  const imageURLArray = JSON.parse(dataString);
-  let currentIndex = 0; // initialize the current index to 0
-  let intervalId; // initialize the interval ID variable
+// projectImages.forEach(projectImage => {
+//   const dataString = projectImage.dataset.images;
+//   const imageURLArray = JSON.parse(dataString);
+//   let currentIndex = 0; // initialize the current index to 0
+//   let intervalId; // initialize the interval ID variable
 
-  function startInterval() {
-    // start a new interval to change the image every 500ms
-    intervalId = setInterval(() => {
-      // update the image source to the next one in the array
-      projectImage.src = imageURLArray[currentIndex];
-      // increment the current index, wrapping around to 0 if necessary
-      currentIndex = (currentIndex + 1) % imageURLArray.length;
-    }, 1000);
-  }
+//   function startInterval() {
+//     // start a new interval to change the image every 500ms
+//     intervalId = setInterval(() => {
+//       // update the image source to the next one in the array
+//       projectImage.src = imageURLArray[currentIndex];
+//       // increment the current index, wrapping around to 0 if necessary
+//       currentIndex = (currentIndex + 1) % imageURLArray.length;
+//     }, 1000);
+//   }
 
-  function stopInterval() {
-    // clear the interval when the mouse leaves the image
-    clearInterval(intervalId);
-  }
+//   function stopInterval() {
+//     // clear the interval when the mouse leaves the image
+//     clearInterval(intervalId);
+//   }
 
-  projectImage.addEventListener('mouseenter', () => {
-    startInterval();
-  });
+//   projectImage.addEventListener('mouseenter', () => {
+//     startInterval();
+//   });
 
-  projectImage.addEventListener('mouseleave', () => {
-    stopInterval();
-  });
-});
+//   projectImage.addEventListener('mouseleave', () => {
+//     stopInterval();
+//   });
+// });
 
 
 // window.addEventListener('load', () => {
